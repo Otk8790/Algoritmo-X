@@ -11,6 +11,10 @@ public class Player : MonoBehaviour
 
     public Rigidbody rb;
     public float fuerzaDeSalto = 5f;
+    /* public bool playerShield = false; */
+    [SerializeField]
+    private GameObject _shieldGameObject;
+    public bool shieldsActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,24 @@ public class Player : MonoBehaviour
     {
         Movimiento();
         Salto();
+        Escudo();
+    }
+
+    private void Escudo()
+    {
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            shieldsActive = true;
+            _shieldGameObject.SetActive(true);
+            StartCoroutine(DesactivateShields());
+        }
+    }
+
+    IEnumerator DesactivateShields()
+    {
+        yield return new WaitForSeconds(5.0f);
+        _shieldGameObject.SetActive(false);
+        shieldsActive = false;
     }
 
     private void Movimiento()
