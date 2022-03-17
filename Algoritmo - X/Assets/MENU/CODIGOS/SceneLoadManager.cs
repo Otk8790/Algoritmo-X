@@ -22,6 +22,7 @@ public class SceneLoadManager : MonoBehaviour
     AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneIndex);
     while(!asyncOperation.isDone)
     {
+        Time.timeScale = 1f;
         Debug.Log(asyncOperation.progress);
         loadbar.value = asyncOperation.progress / 0.9f;
         yield return null;

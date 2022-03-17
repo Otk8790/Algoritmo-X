@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33a5bc88-812b-448a-b3a3-dd1165272457" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Algoritmo - X/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algoritmo - X/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MENU/SCENA/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MENU/SCENA/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MENU/SCENA/Menu_Profiles/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MENU/SCENA/Menu_Profiles/Main Camera Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Geo/Materials/5 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Geo/Materials/5 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Geo/Materials/6 - Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Geo/Materials/6 - Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Materials/HG_Adv_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Materials/HG_Adv_02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Materials/HG_Adv_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HOLO_FX_PACK/Materials/HG_Adv_03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Shield Color.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Shield Color.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lucian_Unity_Animaciones_Basicas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lucian_Unity_Animaciones_Basicas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo_Personajes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo_Personajes.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +78,7 @@
       <updated>1647323565724</updated>
       <workItem from="1647323578671" duration="2263000" />
       <workItem from="1647417504855" duration="1201000" />
+      <workItem from="1647456444280" duration="618000" />
     </task>
     <servers />
   </component>
