@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     public float velocidadMovimiento = 5.0f;
     public float velocidadRotacion = 200.0f;
     private PlayerAnimation _playerAnim;
-    private ShieldAnimations _shieldAnim;
     private Animator anim;
     public float x, y;
 
@@ -24,7 +23,6 @@ public class Player : MonoBehaviour
         puedoSaltar = false;
         anim = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
-        _shieldAnim = GetComponent<ShieldAnimations>();
     }
 
     // Update is called once per frame
