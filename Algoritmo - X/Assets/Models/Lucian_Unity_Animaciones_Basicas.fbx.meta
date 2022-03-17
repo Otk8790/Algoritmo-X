@@ -11,7 +11,7 @@ ModelImporter:
     second: Run_Lucian
   - first:
       74: -5636266554363150716
-    second: Jump_Lucian
+    second: Prepare_Jump_Lucian
   - first:
       74: 7571671104259957428
     second: Fall_Lucian
@@ -27,6 +27,9 @@ ModelImporter:
   - first:
       74: 3726464548624384073
     second: Pose_Shields_Lucian
+  - first:
+      74: 4416376106212886589
+    second: Jump_Lucian
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -194,7 +197,7 @@ ModelImporter:
       name: Jump_Lucian
       takeName: Take 001
       internalID: 0
-      firstFrame: 152
+      firstFrame: 166
       lastFrame: 180
       wrapMode: 0
       orientationOffsetY: 0
@@ -213,7 +216,50 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
+      curves:
+      - name: Curve
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.24583334
+            value: 0.004005655
+            inSlope: 0.025313074
+            outSlope: 0.025313074
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.34806627
+          - serializedVersion: 3
+            time: 0.707848
+            value: 0.0038494659
+            inSlope: -0.020226762
+            outSlope: -0.020226762
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.6434504
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
       events: []
       transformMask: []
       maskType: 3
@@ -223,7 +269,7 @@ ModelImporter:
       name: Fall_Lucian
       takeName: Take 001
       internalID: 0
-      firstFrame: 181
+      firstFrame: 183
       lastFrame: 210
       wrapMode: 0
       orientationOffsetY: 0
@@ -242,7 +288,50 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
+      curves:
+      - name: Curve
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.15416667
+            value: 0.0028275212
+            inSlope: 0.020590195
+            outSlope: 0.020590195
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.25340804
+          - serializedVersion: 3
+            time: 0.7954249
+            value: 0.0026851173
+            inSlope: -0.01589484
+            outSlope: -0.01589484
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.4347051
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
       events: []
       transformMask: []
       maskType: 3
