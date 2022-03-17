@@ -15018,6 +15018,7 @@ MonoBehaviour:
   _shieldGameObject: {fileID: 1340225781212846438}
   shieldsActive: 0
   puedoSaltar: 0
+  gravity: 9.8
 --- !u!95 &1680510504
 Animator:
   serializedVersion: 3

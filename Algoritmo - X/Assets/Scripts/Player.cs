@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     private GameObject _shieldGameObject;
     public bool shieldsActive = false;
     public bool puedoSaltar;
+    public float gravity = 9.8f;
+    public bool puede_moverse = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +39,9 @@ public class Player : MonoBehaviour
 
     private void Escudo()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
+        if(Input.GetKeyDown(KeyCode.Z) && puedoSaltar)
         {
+            puede_moverse = false;
             shieldsActive = true;
             _shieldGameObject.SetActive(true);
             _playerAnim.Escudo(true);
@@ -52,10 +55,12 @@ public class Player : MonoBehaviour
         _shieldGameObject.SetActive(false);
         shieldsActive = false;
         _playerAnim.Escudo(false);
+        puede_moverse = true;
     }
 
     private void Movimiento()
     {
+        if(puede_moverse){
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
@@ -63,14 +68,14 @@ public class Player : MonoBehaviour
         transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento);
 
         anim.SetFloat("Speed", y);
+        }
     }
 
     private void Salto()
     {
-
         if(puedoSaltar)
         {
-            if(Input.GetKeyDown (KeyCode.Space))
+            if(Input.GetKeyDown (KeyCode.Space) && puede_moverse)
             {
                 _playerAnim.Jump(true);
                 rb.AddForce(new Vector3(0, fuerzaDeSalto, 0), ForceMode.Impulse);
