@@ -5122,6 +5122,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2015416753733002015, guid: 4d79b5d6351a9de4eb04195e58e9e88d, type: 3}
   m_PrefabInstance: {fileID: 2021519931}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &406383530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2649375809134459270, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
+  m_PrefabInstance: {fileID: 2883729361630494441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &406383531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406383530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed29ce6f39aec948b52de05ee8cb09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &406383536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2883729359954505934, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
+  m_PrefabInstance: {fileID: 2883729361630494441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406383530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c67a5888cc5de4ebebdcc4b980f5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &978381415
 GameObject:
   m_ObjectHideFlags: 0
@@ -13726,6 +13754,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894674354494786560, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
+      propertyPath: logicaPersonaje1
+      value: 
+      objectReference: {fileID: 406383536}
     - target: {fileID: 1003251285671436245, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13737,6 +13769,10 @@ PrefabInstance:
     - target: {fileID: 2883729359954505934, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
       propertyPath: playerShield
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883729359954505934, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
+      propertyPath: fuerzaDeSalto
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2883729359954505934, guid: 2c9f6e3097b2be744b40c0eb48925537, type: 3}
       propertyPath: shieldsActive

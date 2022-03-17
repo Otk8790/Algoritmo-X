@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float velocidadMovimiento = 5.0f;
     public float velocidadRotacion = 200.0f;
+    private PlayerAnimation _playerAnim;
     private Animator anim;
     public float x, y;
 
@@ -15,10 +16,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject _shieldGameObject;
     public bool shieldsActive = false;
+    public bool puedoSaltar;
     // Start is called before the first frame update
     void Start()
     {
+        puedoSaltar = false;
         anim = GetComponent<Animator>();
+        _playerAnim = GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class Player : MonoBehaviour
         {
             shieldsActive = true;
             _shieldGameObject.SetActive(true);
+            _playerAnim.Escudo(true);
             StartCoroutine(DesactivateShields());
         }
     }
@@ -44,6 +49,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(5.0f);
         _shieldGameObject.SetActive(false);
         shieldsActive = false;
+        _playerAnim.Escudo(false);
     }
 
     private void Movimiento()
@@ -59,9 +65,26 @@ public class Player : MonoBehaviour
 
     private void Salto()
     {
-        if(Input.GetKeyDown (KeyCode.Space))
+
+        if(puedoSaltar)
         {
-            rb.AddForce(new Vector3(0, fuerzaDeSalto, 0), ForceMode.Impulse);
+            if(Input.GetKeyDown (KeyCode.Space))
+            {
+                _playerAnim.Jump(true);
+                rb.AddForce(new Vector3(0, fuerzaDeSalto, 0), ForceMode.Impulse);
+            }
+            anim.SetBool("tocoSuelo", true);
         }
+        else
+        {
+            EstoyCayendo();
+        }
+    
+    }
+
+    public void EstoyCayendo()
+    {
+        anim.SetBool("tocoSuelo", false);
+        _playerAnim.Jump(false);
     }
 }
