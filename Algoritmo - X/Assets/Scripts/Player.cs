@@ -18,15 +18,15 @@ public class Player : MonoBehaviour
     private GameObject _shieldGameObject;
     public bool shieldsActive = false;
     public bool puedoSaltar;
-    public float gravity = 9.8f;
+    public float modificadorGravedad = 2;
     public bool puede_moverse = true;
-    // Start is called before the first frame update
     void Start()
     {
         puedoSaltar = false;
         anim = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
         _shieldAnim = GetComponent<ShieldAnimations>();
+        Physics.gravity *= modificadorGravedad;
     }
 
     // Update is called once per frame
@@ -69,6 +69,17 @@ public class Player : MonoBehaviour
 
         anim.SetFloat("Speed", y);
         }
+
+        /*horizontalMove = Input.GetAxis("Horizontal");
+        verticalMove = Input.GetAxis("Vertical");
+
+        playerInput = new Vector3(horizontalMove, 0, verticalMove);
+        playerInput = Vector3.ClampMagnitude(playerInput, 1);
+
+        anim.SetFloat("Speed", playerInput.magnitude * playerSpeed);*/
+
+
+
     }
 
     private void Salto()
@@ -80,6 +91,7 @@ public class Player : MonoBehaviour
                 _playerAnim.Jump(true);
                 rb.AddForce(new Vector3(0, fuerzaDeSalto, 0), ForceMode.Impulse);
             }
+            
             anim.SetBool("tocoSuelo", true);
         }
         else

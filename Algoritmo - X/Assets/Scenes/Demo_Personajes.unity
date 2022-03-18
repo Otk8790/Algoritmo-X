@@ -15009,7 +15009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c67a5888cc5de4ebebdcc4b980f5e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 8
+  velocidadMovimiento: 5
   velocidadRotacion: 200
   x: 0
   y: 0
@@ -15018,7 +15018,8 @@ MonoBehaviour:
   _shieldGameObject: {fileID: 1340225781212846438}
   shieldsActive: 0
   puedoSaltar: 0
-  gravity: 9.8
+  modificadorGravedad: 2
+  puede_moverse: 1
 --- !u!95 &1680510504
 Animator:
   serializedVersion: 3
@@ -19290,7 +19291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2444943444067140278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7eb0ad7681944445b077aa6b8fc3c30, type: 3}
   m_Name: 
