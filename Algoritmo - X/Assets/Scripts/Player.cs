@@ -61,13 +61,13 @@ public class Player : MonoBehaviour
     private void Movimiento()
     {
         if(puede_moverse){
-        x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
+            x = Input.GetAxis("Horizontal");
+            y = Input.GetAxis("Vertical");
 
-        transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
-        transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento);
+            transform.Rotate(0, x * Time.deltaTime * velocidadRotacion, 0);
+            transform.Translate(0, 0, y * Time.deltaTime * velocidadMovimiento);
 
-        anim.SetFloat("Speed", y);
+            anim.SetFloat("Speed", y);
         }
     }
 
