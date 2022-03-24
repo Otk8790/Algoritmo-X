@@ -20,6 +20,13 @@ public class Player : MonoBehaviour
     public bool puedoSaltar;
     public float modificadorGravedad = 2;
     public bool puede_moverse = true;
+
+    [Header("PARTICULAS")]
+    [SerializeField] private ParticleSystem polvoPies;
+    [SerializeField] private ParticleSystem polvoSalto;
+
+    private ParticleSystem.EmissionModule emisionPolvoPies;
+
     void Start()
     {
         puedoSaltar = false;
@@ -27,6 +34,7 @@ public class Player : MonoBehaviour
         _playerAnim = GetComponent<PlayerAnimation>();
         _shieldAnim = GetComponent<ShieldAnimations>();
         Physics.gravity *= modificadorGravedad;
+        emisionPolvoPies = polvoPies.emission;
     }
 
     // Update is called once per frame
@@ -35,6 +43,19 @@ public class Player : MonoBehaviour
         Movimiento();
         Salto();
         Escudo();
+        checkPolvoPies();
+    }
+
+    private void checkPolvoPies()
+    {
+        if(puedoSaltar == true && x != 0)
+        {
+            emisionPolvoPies.rateOverTime = 50;
+        }
+        else
+        {
+            emisionPolvoPies.rateOverTime = 0;
+        }
     }
 
     private void Escudo()
