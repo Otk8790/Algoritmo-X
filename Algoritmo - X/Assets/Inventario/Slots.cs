@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Slots : MonoBehaviour
 {
@@ -11,4 +12,19 @@ public class Slots : MonoBehaviour
 
     public bool emty;
     public Sprite icon;
+
+    public Transform slotIconGameObject;
+    private void Start()
+    {
+        slotIconGameObject = transform.GetChild(0);
+    }
+
+    public void UpdateSlop()
+    {
+        slotIconGameObject.GetComponent<Image>().sprite = icon;
+    }
+    public void UseItem()
+    {
+
+    }
 }

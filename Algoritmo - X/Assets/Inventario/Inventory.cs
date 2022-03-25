@@ -15,7 +15,6 @@ public class Inventory : MonoBehaviour
 
     public GameObject slotHolder;
 
-
     void Start()
     {
         allSlots = slotHolder.transform.childCount;
@@ -26,7 +25,7 @@ public class Inventory : MonoBehaviour
         {
             slot[i] = slotHolder.transform.GetChild(i).gameObject;
 
-            if (slot[i].GetComponent<Slots>().item==null)
+            if (slot[i].GetComponent<Slots>().item == null)
             {
                 slot[i].GetComponent<Slots>().emty = true;
             }
@@ -61,7 +60,7 @@ public class Inventory : MonoBehaviour
 
             Item item = itemPickedUp.GetComponent<Item>();
 
-            AddItem(itemPickedUp,item.ID,item.type,item.descripcion,item.icon);
+            AddItem(itemPickedUp, item.ID, item.type, item.descripcion, item.icon);
         }
     }
 
@@ -83,8 +82,12 @@ public class Inventory : MonoBehaviour
                 itemObject.transform.parent = slot[i].transform;
                 itemObject.SetActive(false);
 
+                slot[i].GetComponent<Slots>().UpdateSlop();
+
+
                 slot[i].GetComponent<Slots>().emty = false;
             }
+            return;
         }
     }
 }

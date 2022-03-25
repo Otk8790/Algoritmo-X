@@ -14,4 +14,22 @@ public class Item : MonoBehaviour
     [HideInInspector]
     public bool pickedUp;
 
+    [HideInInspector]
+    public bool equipped;
+
+    private void Update()
+    {
+        if (equipped)
+        {
+
+        }
+    }
+
+    public void ItemUsage()
+    {
+        if (type == "Weapon")
+        {
+            equipped = true;
+        }
+    }
 }
