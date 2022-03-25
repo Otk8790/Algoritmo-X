@@ -386,9 +386,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: PlayerJump
     m_EventTreshold: 0
-  - m_ConditionMode: 3
-    m_ConditionEvent: PlayerWalkVelocity
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7506367861603834122}
   m_Solo: 0
