@@ -22,4 +22,9 @@ public class PlayerAnimation : MonoBehaviour
     {
         _anim.SetBool("Escudo", escudo);
     }
+
+    public void Attack(bool attack)
+    {
+        _anim.SetBool("Attack", attack);
+    }
 }
