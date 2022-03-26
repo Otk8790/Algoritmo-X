@@ -26300,6 +26300,7 @@ MonoBehaviour:
   player: {fileID: 919132147739101042}
   _shieldGameObject: {fileID: 1340225781212846438}
   shieldsActive: 0
+  polvoPies: {fileID: 0}
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
