@@ -6,17 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    //MovimientoPersonaje
+    public Animator playerAnimatorController;
+    public CharacterController player;
+
+    [Header("MOVIMIENTO")]
     private float horizontalMove;
     private float verticalMove;
-
     private Vector3 playerInput;
-
     public float playerSpeed;
+
+    [Header("SALTO")]
     public float gravity = 9.8f;
     public float fallVeclocity;
     public float jumpForce;
 
+    [Header("CAMARA/DIRECCION")]
     public Camera mainCamera;
     private Vector3 camForward;
     private Vector3 camRight;
@@ -28,12 +32,9 @@ public class PlayerController : MonoBehaviour
     public float slopeForceDown;
     //public AudioSource salto;
 
-    public Animator playerAnimatorController;
 
-    public CharacterController player;
-
-    [SerializeField]
-    private GameObject _shieldGameObject;
+    [Header("ESCUDO")]
+    private GameObject _shieldGameObject;[SerializeField]
     public bool shieldsActive = false;
     private PlayerAnimation _playerAnim;
     private bool puedoSaltar;
@@ -48,9 +49,11 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        puedoSaltar = false;
         player = GetComponent<CharacterController>();
         playerAnimatorController = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
+        emisionPolvoPies = polvoPies.emission;
     }
 
     // Update is called once per frame
@@ -73,6 +76,8 @@ public class PlayerController : MonoBehaviour
         PlayerSkills();
 
         Escudo();
+
+        checkPolvoPies();
 
         player.Move(movePlayer * Time.deltaTime);
     }
@@ -104,7 +109,6 @@ public class PlayerController : MonoBehaviour
     {
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
-            //Instantiate(caida);
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
             playerAnimatorController.SetTrigger("PlayerJump");
