@@ -36,6 +36,11 @@ public class PlayerController : MonoBehaviour
     private GameObject _shieldGameObject;
     public bool shieldsActive = false;
     private PlayerAnimation _playerAnim;
+    private bool puedoSaltar;
+
+    [Header("PARTICULAS")]
+    [SerializeField] private ParticleSystem polvoPies;
+    private ParticleSystem.EmissionModule emisionPolvoPies;
 
     //Variables animacion
     //public Animator playerAnimatorController;
@@ -139,6 +144,17 @@ public class PlayerController : MonoBehaviour
         _shieldGameObject.SetActive(false);
         shieldsActive = false;
         _playerAnim.Escudo(false);
+    }
+    private void checkPolvoPies()
+    {
+        if (puedoSaltar == true && horizontalMove != 0)
+        {
+            emisionPolvoPies.rateOverTime = 50;
+        }
+        else
+        {
+            emisionPolvoPies.rateOverTime = 0;
+        }
     }
 
     private void OnAnimatorMove()
