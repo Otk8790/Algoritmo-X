@@ -38,9 +38,9 @@ public class PlayerController : MonoBehaviour
     private PlayerAnimation _playerAnim;
     private bool puedoSaltar;
 
-    [Header("PARTICULAS")]
+    /* [Header("PARTICULAS")]
     [SerializeField] private ParticleSystem polvoPies;
-    private ParticleSystem.EmissionModule emisionPolvoPies;
+    private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
@@ -73,9 +73,9 @@ public class PlayerController : MonoBehaviour
         PlayerSkills();
 
         Escudo();
-        checkPolvoPies();
+        /* checkPolvoPies(); */
         Ataque();
-        
+
         player.Move(movePlayer * Time.deltaTime);
     }
     public void movimiento()
@@ -156,7 +156,7 @@ public class PlayerController : MonoBehaviour
         shieldsActive = false;
         _playerAnim.Escudo(false);
     }
-    private void checkPolvoPies()
+    /* private void checkPolvoPies()
     {
         if (puedoSaltar == true && horizontalMove != 0)
         {
@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour
         {
             emisionPolvoPies.rateOverTime = 0;
         }
-    }
+    } */
 
     private void OnAnimatorMove()
     {
