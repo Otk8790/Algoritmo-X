@@ -77,7 +77,11 @@ public class PlayerController : MonoBehaviour
 
         Escudo();
 
+<<<<<<< HEAD
         checkPolvoPies();
+=======
+        Ataque();
+>>>>>>> c9db534d361e05a73a63ba4aa576d14f3a837023
 
         player.Move(movePlayer * Time.deltaTime);
     }
@@ -131,6 +135,15 @@ public class PlayerController : MonoBehaviour
 
         playerAnimatorController.SetBool("IsGrounded", player.isGrounded);
     }
+
+    private void Ataque()
+    {
+        if (Input.GetKeyDown(KeyCode.F) && player.isGrounded)
+        {
+            playerAnimatorController.SetTrigger("Attack");
+        }
+    }
+
     private void Escudo()
     {
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)

@@ -26347,7 +26347,11 @@ MonoBehaviour:
   slideVelocity: 0
   slopeForceDown: 0
   shieldsActive: 0
+<<<<<<< HEAD
   polvoPies: {fileID: 833171931}
+=======
+  polvoPies: {fileID: 0}
+>>>>>>> c9db534d361e05a73a63ba4aa576d14f3a837023
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
