@@ -17,19 +17,53 @@ public class Item : MonoBehaviour
     [HideInInspector]
     public bool equipped;
 
+    [HideInInspector]
+    public GameObject weaponManager;
+
+    [HideInInspector]
+    public GameObject weapon;
+
+    public bool playerWeapon;
+
+    private void Start()
+    {
+        weaponManager = GameObject.FindWithTag("WeaponManager");
+
+        if (!playerWeapon)
+        {
+            int allweapons = weaponManager.transform.childCount;
+
+            for (int i = 0; i < allweapons; i++)
+            {
+                if (weaponManager.transform.GetChild(i).gameObject.GetComponent<Item>().ID==ID)
+                {
+                    weapon = weaponManager.transform.GetChild(i).gameObject;
+                }
+            }
+        }
+    }
     private void Update()
     {
         if (equipped)
         {
-
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                equipped = false;
+            }
+            if (equipped==false)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 
     public void ItemUsage()
     {
-        if (type == "Weapon")
+        if (type=="Weapon")
         {
-            equipped = true;
+            weapon.SetActive(true);
+
+            weapon.GetComponent<Item>().equipped = true;
         }
     }
 }

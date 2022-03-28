@@ -34,9 +34,13 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private GameObject _shieldGameObject;
-    public bool shieldsActive = false;
     private PlayerAnimation _playerAnim;
-    private bool puedoSaltar;
+
+    public bool shieldsActive = false;
+    
+    public bool puedeMoverse;
+    private bool activarEscudo;
+
 
     /* [Header("PARTICULAS")]
     [SerializeField] private ParticleSystem polvoPies;
@@ -48,6 +52,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        activarEscudo = true;
+        puedeMoverse = true;
+        
         player = GetComponent<CharacterController>();
         playerAnimatorController = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
@@ -73,6 +80,7 @@ public class PlayerController : MonoBehaviour
         PlayerSkills();
 
         Escudo();
+
         /* checkPolvoPies(); */
         Ataque();
 
@@ -80,13 +88,18 @@ public class PlayerController : MonoBehaviour
     }
     public void movimiento()
     {
-        if (shieldsActive == false)
+        //InventarioCerrado();
+        if (shieldsActive == false && puedeMoverse == true)
         {
             horizontalMove = Input.GetAxis("Horizontal");
             verticalMove = Input.GetAxis("Vertical");
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
+        }
+        else
+        {
+            activarEscudo = true;
         }
     }
 
@@ -132,7 +145,7 @@ public class PlayerController : MonoBehaviour
 
     private void Ataque()
     {
-        if (Input.GetKeyDown(KeyCode.F) && player.isGrounded)
+        if (Input.GetButtonDown("Fire1") && player.isGrounded)
         {
             playerAnimatorController.SetTrigger("Attack");
         }
@@ -142,10 +155,14 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
-            shieldsActive = true;
-            _shieldGameObject.SetActive(true);
-            _playerAnim.Escudo(true);
-            StartCoroutine(DesactivateShields());
+            if (activarEscudo == true)
+            {
+                shieldsActive = true;
+                _shieldGameObject.SetActive(true);
+                _playerAnim.Escudo(true);
+                StartCoroutine(DesactivateShields());
+                puedeMoverse = false;
+            }
         }
     }
 
@@ -155,6 +172,8 @@ public class PlayerController : MonoBehaviour
         _shieldGameObject.SetActive(false);
         shieldsActive = false;
         _playerAnim.Escudo(false);
+        puedeMoverse = true;
+
     }
     /* private void checkPolvoPies()
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public PlayerController playerController;
     [Header("Referencia Slots")]
     private bool inventoryEnable;
     public GameObject inventory;
@@ -36,19 +37,21 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            inventoryEnable = !inventoryEnable;
-        }
-        if (inventoryEnable)
-        {
-            inventory.SetActive(true);
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            inventory.SetActive(false);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            if (inventory.gameObject.activeSelf)
+            {
+                inventory.SetActive(false);
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                InventarioCerrado();
+            }
+            else
+            {
+                inventory.SetActive(true);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+                InventarioAbierto();
+            }
+
         }
     }
 
@@ -89,5 +92,13 @@ public class Inventory : MonoBehaviour
             }
             return;
         }
+    }
+    public void InventarioAbierto()
+    {
+        playerController.puedeMoverse = false;
+    }
+    public void InventarioCerrado()
+    {
+        playerController.puedeMoverse = true;
     }
 }
