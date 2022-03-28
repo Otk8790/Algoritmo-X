@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPausa : MonoBehaviour
 {
+    public TerceraPersona terceraPersona;
     public GameObject menuPausa;
 
     public int numeroEscena;
@@ -19,15 +20,17 @@ public class MenuPausa : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
+        if(Input.GetKeyDown(KeyCode.Escape)){
+        
         if (juegoPausado == true)
         {
             Renudar();
+            terceraPersona.enabled = true;
         }
         else
         {
             Pausa();
+            terceraPersona.enabled = false;
         }
         }
     }

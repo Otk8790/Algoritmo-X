@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     public bool shieldsActive = false;
     
     public bool puedeMoverse;
-    private bool activarEscudo;
+    public bool activarEscudo;
 
 
     /* [Header("PARTICULAS")]
@@ -96,10 +96,6 @@ public class PlayerController : MonoBehaviour
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
-        }
-        else
-        {
-            activarEscudo = true;
         }
     }
 

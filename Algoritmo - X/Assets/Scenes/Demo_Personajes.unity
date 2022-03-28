@@ -12511,6 +12511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5182ff592ec8eda4790055bd36a0965b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terceraPersona: {fileID: 0}
   menuPausa: {fileID: 435192749}
   numeroEscena: 0
 --- !u!114 &608494957
@@ -21066,19 +21067,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1306388095}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1306388098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23403,7 +23392,7 @@ GameObject:
   - component: {fileID: 1872549990}
   - component: {fileID: 1872549989}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23421,6 +23410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5182ff592ec8eda4790055bd36a0965b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terceraPersona: {fileID: 963194231}
   menuPausa: {fileID: 435192749}
   numeroEscena: 0
 --- !u!4 &1872549990
@@ -23431,7 +23421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872549988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 235.03917, y: 154.97374, z: -29.335556}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -24713,15 +24703,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6469708752745145133, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0199995
+      value: -3.520522
       objectReference: {fileID: 0}
     - target: {fileID: 6469708752745145133, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.410001
+      value: 12.8937
       objectReference: {fileID: 0}
     - target: {fileID: 6469708752745145133, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7700014
+      value: 0.2558666
       objectReference: {fileID: 0}
     - target: {fileID: 6469708752745145133, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26220,7 +26210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efafdff10c454f54e89c79061f3c181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 919132147739101041}
+  terceraPersona: {fileID: 963194231}
   inventory: {fileID: 899375492}
   slotHolder: {fileID: 228047947}
 --- !u!114 &919132147739101041
@@ -26248,6 +26238,7 @@ MonoBehaviour:
   _shieldGameObject: {fileID: 1340225781212846438}
   shieldsActive: 0
   puedeMoverse: 0
+  activarEscudo: 0
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
