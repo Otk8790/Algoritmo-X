@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,12 +43,22 @@ public class PlayerController : MonoBehaviour
     public bool activarEscudo;
 
 
-    /* [Header("PARTICULAS")]
+    [Header("PARTICULAS")]
     [SerializeField] private ParticleSystem polvoPies;
-    private ParticleSystem.EmissionModule emisionPolvoPies; */
+    /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
+
+    [Header("VIDA")]
+    int vidaMax = 5;
+    int vidaActual;
+    public Image mascaradeDaño;
+    public TextMeshProUGUI vida;
+    public Image barraverde;
+    public float valorAlfa;
+    public Transform camaraAsacudir;
+    float magnitudSacudida;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +69,7 @@ public class PlayerController : MonoBehaviour
         player = GetComponent<CharacterController>();
         playerAnimatorController = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
+        vidaActual = vidaMax;
     }
 
     // Update is called once per frame
@@ -84,6 +96,8 @@ public class PlayerController : MonoBehaviour
         /* checkPolvoPies(); */
         Ataque();
 
+        Disparo();
+
         player.Move(movePlayer * Time.deltaTime);
     }
     public void movimiento()
@@ -96,6 +110,7 @@ public class PlayerController : MonoBehaviour
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
+            polvoPies.Play();
         }
     }
 
@@ -116,9 +131,11 @@ public class PlayerController : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
+            polvoPies.Stop();
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
             playerAnimatorController.SetTrigger("PlayerJump");
+            
         }
     }
 
@@ -144,6 +161,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && player.isGrounded)
         {
             playerAnimatorController.SetTrigger("Attack");
+        }
+    }
+
+    private void Disparo()
+    {
+        if (Input.GetButtonDown("Fire2") && player.isGrounded)
+        {
+            playerAnimatorController.SetTrigger("Disparar");
         }
     }
 
@@ -191,5 +216,33 @@ public class PlayerController : MonoBehaviour
     {
         playerAnimatorController.SetBool("IsGrounded", false);
         _playerAnim.Jump(false);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+           
+            other.gameObject.SetActive(false);
+               
+        }
+        // reducir la vida
+        vidaActual -=1;
+        /* SacudirCamara(.5f); */
+        valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
+        mascaradeDaño.color = new Color(1,1,1, valorAlfa);
+        //vida.text = vidaActual.ToString();
+        barraverde.fillAmount = (float)vidaActual / vidaMax;
+        if(vidaActual <= 0)
+        {
+         Debug.Log("perdio");
+        
+        }
+       else
+        {     
+           Debug.Log("ahora tengo vida" + vidaActual + "de" + vidaMax);
+        }
+       
+          
     }
 }
