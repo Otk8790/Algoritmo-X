@@ -7,6 +7,7 @@ TagManager:
   - Laser
   - item
   - WeaponManager
+  - Enemy
   layers:
   - Default
   - TransparentFX
