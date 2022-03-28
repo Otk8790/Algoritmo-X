@@ -42,9 +42,9 @@ public class PlayerController : MonoBehaviour
     public bool activarEscudo;
 
 
-    /* [Header("PARTICULAS")]
+    [Header("PARTICULAS")]
     [SerializeField] private ParticleSystem polvoPies;
-    private ParticleSystem.EmissionModule emisionPolvoPies; */
+    /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
@@ -84,6 +84,8 @@ public class PlayerController : MonoBehaviour
         /* checkPolvoPies(); */
         Ataque();
 
+        Disparo();
+
         player.Move(movePlayer * Time.deltaTime);
     }
     public void movimiento()
@@ -96,6 +98,7 @@ public class PlayerController : MonoBehaviour
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
+            polvoPies.Play();
         }
     }
 
@@ -116,9 +119,11 @@ public class PlayerController : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
+            polvoPies.Stop();
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
             playerAnimatorController.SetTrigger("PlayerJump");
+            
         }
     }
 
@@ -144,6 +149,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && player.isGrounded)
         {
             playerAnimatorController.SetTrigger("Attack");
+        }
+    }
+
+    private void Disparo()
+    {
+        if (Input.GetButtonDown("Fire2") && player.isGrounded)
+        {
+            playerAnimatorController.SetTrigger("Disparar");
         }
     }
 
