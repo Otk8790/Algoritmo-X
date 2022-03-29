@@ -924,6 +924,10 @@ MonoBehaviour:
   _shieldGameObject: {fileID: 2740866668174500964, guid: 97d4cc23154601c42a4e1184d31326b7, type: 3}
   shieldsActive: 0
   puedoSaltar: 0
+  modificadorGravedad: 2
+  puede_moverse: 1
+  polvoPies: {fileID: 0}
+  polvoSalto: {fileID: 0}
 --- !u!1 &2883729361510355864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6228,7 +6232,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0a9a6888992f5c64ba6869918275d614, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

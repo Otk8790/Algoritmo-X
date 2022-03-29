@@ -7,19 +7,17 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("MOVIMIENTO")]
+    //MovimientoPersonaje
     private float horizontalMove;
     private float verticalMove;
 
     private Vector3 playerInput;
 
-    [Header("VELOCIDAD")]
     public float playerSpeed;
     public float gravity = 9.8f;
     public float fallVeclocity;
     public float jumpForce;
 
-    [Header("CAMARA")]
     public Camera mainCamera;
     private Vector3 camForward;
     private Vector3 camRight;
@@ -39,31 +37,34 @@ public class PlayerController : MonoBehaviour
     private GameObject _shieldGameObject;
     private PlayerAnimation _playerAnim;
 
-    [Header("CONDICIONES")]
     public bool shieldsActive = false;
+    
     public bool puedeMoverse;
     public bool activarEscudo;
-    public float tiempoDeAtaque = 1.5f;
-    private float timeAtaque = 0;
-    public float tiempoDeEscudo = 5.0f;
-    private float timeEscudo = 0;
+
+    [Header("VIDA")]
+    [SerializeField]
+    int vidaMax = 5;
+    int vidaActual;
+    public Image mascaradeDaño;
+    public Image barraverde;
+    public float valorAlfa;
+
 
     [Header("PARTICULAS")]
-    //[SerializeField] private ParticleSystem polvoPies;
+    [SerializeField] private ParticleSystem polvoPies;
+
+    [Header("CAMARA SHAKE")]
+    [SerializeField] private CameraShake cameraShake;
+
+    [Header("DISPARO")]
+    [SerializeField] private GameObject projectilePrefab;
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
 
-    [Header("VIDA")]
-    int vidaMax = 5;
-    int vidaActual;
-    public Image mascaradeDaño;
-    public TextMeshProUGUI vida;
-    public Image barraverde;
-    public float valorAlfa;
-    public Transform camaraAsacudir;
-    float magnitudSacudida;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -98,7 +99,6 @@ public class PlayerController : MonoBehaviour
 
         Escudo();
 
-        /* checkPolvoPies(); */
         Ataque();
 
         Disparo();
@@ -110,12 +110,12 @@ public class PlayerController : MonoBehaviour
         //InventarioCerrado();
         if (shieldsActive == false && puedeMoverse == true)
         {
+            polvoPies.Play();
             horizontalMove = Input.GetAxis("Horizontal");
             verticalMove = Input.GetAxis("Vertical");
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
-            //polvoPies.Play();
         }
     }
 
@@ -136,10 +136,11 @@ public class PlayerController : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
-            //polvoPies.Stop();
+            polvoPies.Stop();
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
             playerAnimatorController.SetTrigger("PlayerJump");
+            
         }
     }
 
@@ -164,13 +165,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && player.isGrounded)
         {
-            if (Time.time>timeAtaque)
-            {
-                playerAnimatorController.SetTrigger("Attack");
-
-                timeAtaque = Time.time + tiempoDeAtaque;
-
-            }
+            playerAnimatorController.SetTrigger("Attack");
         }
     }
 
@@ -179,6 +174,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && player.isGrounded)
         {
             playerAnimatorController.SetTrigger("Disparar");
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
 
@@ -186,14 +182,13 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
-            if (activarEscudo == true && Time.time>timeEscudo)
+            if (activarEscudo == true)
             {
                 shieldsActive = true;
                 _shieldGameObject.SetActive(true);
                 _playerAnim.Escudo(true);
                 StartCoroutine(DesactivateShields());
                 puedeMoverse = false;
-                timeEscudo = Time.time + tiempoDeEscudo;
             }
         }
     }
@@ -229,17 +224,32 @@ public class PlayerController : MonoBehaviour
         _playerAnim.Jump(false);
     }
 
-     private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.gameObject.CompareTag("Enemy"))
         {
+           
             other.gameObject.SetActive(false);
-            // reducir la vida
-            vidaActual -= 1;
-            /* SacudirCamara(.5f); */
-            valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
-            mascaradeDaño.color = new Color(1, 1, 1, valorAlfa);
-            //vida.text = vidaActual.ToString();
+               
         }
-     }
+        // reducir la vida
+        vidaActual -=1;
+        StartCoroutine(cameraShake.Shake());
+        /* SacudirCamara(.5f); */
+        valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
+        mascaradeDaño.color = new Color(1,1,1, valorAlfa);
+        //vida.text = vidaActual.ToString();
+        barraverde.fillAmount = (float)vidaActual / vidaMax;
+        if(vidaActual <= 0)
+        {
+         Debug.Log("perdio");
+        
+        }
+       else
+        {     
+           Debug.Log("ahora tengo vida" + vidaActual + "de" + vidaMax);
+        }
+       
+          
+    }
 }
