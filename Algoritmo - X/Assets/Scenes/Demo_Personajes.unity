@@ -5610,7 +5610,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 608494960}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6723,7 +6723,7 @@ RectTransform:
   - {fileID: 224753491}
   - {fileID: 1966174073}
   m_Father: {fileID: 608494960}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12661,11 +12661,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 435192752}
-  - {fileID: 899375493}
   - {fileID: 245011257}
   - {fileID: 728933332}
   - {fileID: 1193814393}
+  - {fileID: 435192752}
+  - {fileID: 899375493}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13514,7 +13514,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 608494960}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -19439,7 +19439,7 @@ RectTransform:
   - {fileID: 702264763}
   - {fileID: 228047948}
   m_Father: {fileID: 608494960}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20472,7 +20472,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 608494960}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -20612,7 +20612,7 @@ MonoBehaviour:
   descripcion: 
   emty: 0
   icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
+  slotIconGameObject: {fileID: 394147271}
 --- !u!1 &1233864911
 GameObject:
   m_ObjectHideFlags: 0
@@ -21425,7 +21425,7 @@ MonoBehaviour:
   descripcion: 
   emty: 0
   icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
+  slotIconGameObject: {fileID: 1655603886}
 --- !u!1 &1344472577
 GameObject:
   m_ObjectHideFlags: 0
@@ -26772,13 +26772,14 @@ MonoBehaviour:
   shieldsActive: 0
   puedeMoverse: 0
   activarEscudo: 0
+  tiempoDeAtaque: 1.5
+  tiempoDeEscudo: 12
   vidaMax: 5
   "mascaradeDa\xF1o": {fileID: 245011258}
   barraverde: {fileID: 1193814394}
   valorAlfa: 0
   polvoPies: {fileID: 65201558}
   cameraShake: {fileID: 963194232}
-  projectilePrefab: {fileID: 3465657175216665036, guid: b21b4073a42c5ff48a5ee1e3add0516f, type: 3}
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0

@@ -37,10 +37,14 @@ public class PlayerController : MonoBehaviour
     private GameObject _shieldGameObject;
     private PlayerAnimation _playerAnim;
 
+    [Header("CONDICIONES")]
     public bool shieldsActive = false;
-    
     public bool puedeMoverse;
     public bool activarEscudo;
+    public float tiempoDeAtaque = 1.5f;
+    private float timeAtaque = 0f;
+    public float tiempoDeEscudo = 12.0f;
+    private float timeEscudo = 0f;
 
     [Header("VIDA")]
     [SerializeField]
@@ -57,8 +61,8 @@ public class PlayerController : MonoBehaviour
     [Header("CAMARA SHAKE")]
     [SerializeField] private CameraShake cameraShake;
 
-    [Header("DISPARO")]
-    [SerializeField] private GameObject projectilePrefab;
+    //[Header("DISPARO")]
+    //[SerializeField] private GameObject projectilePrefab;
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
@@ -165,7 +169,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && player.isGrounded)
         {
-            playerAnimatorController.SetTrigger("Attack");
+            if (Time.time>timeAtaque)
+            {
+                playerAnimatorController.SetTrigger("Attack");
+                timeAtaque = Time.time + tiempoDeAtaque;
+            }
         }
     }
 
@@ -174,7 +182,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && player.isGrounded)
         {
             playerAnimatorController.SetTrigger("Disparar");
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            //Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
 
@@ -182,13 +190,14 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
-            if (activarEscudo == true)
+            if (activarEscudo == true && Time.time>timeEscudo)
             {
                 shieldsActive = true;
                 _shieldGameObject.SetActive(true);
                 _playerAnim.Escudo(true);
                 StartCoroutine(DesactivateShields());
                 puedeMoverse = false;
+                timeEscudo = Time.time + tiempoDeEscudo;
             }
         }
     }
@@ -230,26 +239,14 @@ public class PlayerController : MonoBehaviour
         {
            
             other.gameObject.SetActive(false);
-               
-        }
-        // reducir la vida
-        vidaActual -=1;
-        StartCoroutine(cameraShake.Shake());
-        /* SacudirCamara(.5f); */
-        valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
-        mascaradeDaño.color = new Color(1,1,1, valorAlfa);
-        //vida.text = vidaActual.ToString();
-        barraverde.fillAmount = (float)vidaActual / vidaMax;
-        if(vidaActual <= 0)
-        {
-         Debug.Log("perdio");
-        
-        }
-       else
-        {     
-           Debug.Log("ahora tengo vida" + vidaActual + "de" + vidaMax);
-        }
-       
-          
+            // reducir la vida
+            vidaActual -= 1;
+            StartCoroutine(cameraShake.Shake());
+            /* SacudirCamara(.5f); */
+            valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
+            mascaradeDaño.color = new Color(1, 1, 1, valorAlfa);
+            //vida.text = vidaActual.ToString();
+            barraverde.fillAmount = (float)vidaActual / vidaMax;
+        } 
     }
 }
