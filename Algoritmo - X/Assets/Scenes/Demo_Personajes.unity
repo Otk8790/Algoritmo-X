@@ -5610,7 +5610,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 608494960}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6703,7 +6703,7 @@ RectTransform:
   - {fileID: 224753491}
   - {fileID: 1966174073}
   m_Father: {fileID: 608494960}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11823,7 +11823,6 @@ GameObject:
   - component: {fileID: 502019167}
   - component: {fileID: 502019169}
   - component: {fileID: 502019168}
-  - component: {fileID: 502019171}
   m_Layer: 5
   m_Name: Slot (4)
   m_TagString: Untagged
@@ -11889,25 +11888,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502019166}
   m_CullTransparentMesh: 1
---- !u!114 &502019171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502019166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3884fd1b62205fc43b7db03e02340307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  descripcion: 
-  emty: 0
-  icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
 --- !u!1 &536123184
 GameObject:
   m_ObjectHideFlags: 0
@@ -12580,11 +12560,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 435192752}
-  - {fileID: 899375493}
   - {fileID: 245011257}
   - {fileID: 728933332}
   - {fileID: 1193814393}
+  - {fileID: 435192752}
+  - {fileID: 899375493}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13433,7 +13413,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 608494960}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -19343,7 +19323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &899375493
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19358,7 +19338,7 @@ RectTransform:
   - {fileID: 702264763}
   - {fileID: 228047948}
   m_Father: {fileID: 608494960}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20376,7 +20356,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 608494960}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -20561,7 +20541,7 @@ MonoBehaviour:
   descripcion: 
   emty: 0
   icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
+  slotIconGameObject: {fileID: 394147271}
 --- !u!1 &1233864911
 GameObject:
   m_ObjectHideFlags: 0
@@ -21294,8 +21274,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -21374,7 +21354,7 @@ MonoBehaviour:
   descripcion: 
   emty: 0
   icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
+  slotIconGameObject: {fileID: 1655603886}
 --- !u!1 &1344472577
 GameObject:
   m_ObjectHideFlags: 0
@@ -21866,7 +21846,6 @@ GameObject:
   - component: {fileID: 1428474430}
   - component: {fileID: 1428474432}
   - component: {fileID: 1428474431}
-  - component: {fileID: 1428474434}
   m_Layer: 5
   m_Name: Slot (3)
   m_TagString: Untagged
@@ -21932,25 +21911,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428474429}
   m_CullTransparentMesh: 1
---- !u!114 &1428474434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428474429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3884fd1b62205fc43b7db03e02340307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  descripcion: 
-  emty: 0
-  icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
 --- !u!1 &1429058033
 GameObject:
   m_ObjectHideFlags: 0
@@ -23174,8 +23134,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -26679,9 +26639,11 @@ MonoBehaviour:
   shieldsActive: 0
   puedeMoverse: 0
   activarEscudo: 0
+  tiempoDeAtaque: 1.5
+  tiempoDeEscudo: 12
   "mascaradeDa\xF1o": {fileID: 245011258}
   vida: {fileID: 0}
-  barraverde: {fileID: 1193814394}
+  barraverde: {fileID: 0}
   valorAlfa: 0
   camaraAsacudir: {fileID: 0}
 --- !u!143 &919132147739101042

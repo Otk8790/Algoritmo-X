@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
             {
                 slot[i].GetComponent<Slots>().emty = true;
             }
-        }
+        } 
     }
     // Update is called once per frame
     void Update()
