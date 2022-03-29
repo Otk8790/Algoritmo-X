@@ -19963,8 +19963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef00d403b21937468d567e85c372f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1.5
-  magnitude: 1.5
+  duration: 1
+  magnitude: 0.25
 --- !u!1 &978381415
 GameObject:
   m_ObjectHideFlags: 0
@@ -26722,6 +26722,7 @@ GameObject:
   - component: {fileID: 919132147739101042}
   - component: {fileID: 919132147739101041}
   - component: {fileID: 919132147739101043}
+  - component: {fileID: 919132147739101044}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -26741,6 +26742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efafdff10c454f54e89c79061f3c181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   terceraPersona: {fileID: 963194231}
   inventory: {fileID: 899375492}
   slotHolder: {fileID: 228047947}
@@ -26776,6 +26778,7 @@ MonoBehaviour:
   valorAlfa: 0
   polvoPies: {fileID: 65201558}
   cameraShake: {fileID: 963194232}
+  projectilePrefab: {fileID: 3465657175216665036, guid: b21b4073a42c5ff48a5ee1e3add0516f, type: 3}
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
@@ -26804,6 +26807,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed29ce6f39aec948b52de05ee8cb09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &919132147739101044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147739101039}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71cc2d2d7be334faf28d93cdc7d14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &919132148756782017

@@ -56,6 +56,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("CAMARA SHAKE")]
     [SerializeField] private CameraShake cameraShake;
+
+    [Header("DISPARO")]
+    [SerializeField] private GameObject projectilePrefab;
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
@@ -171,6 +174,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && player.isGrounded)
         {
             playerAnimatorController.SetTrigger("Disparar");
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
 
