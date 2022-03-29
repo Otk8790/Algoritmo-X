@@ -19,7 +19,6 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
-        inventory.SetActive(false);
         allSlots = slotHolder.transform.childCount;
 
         slot = new GameObject[allSlots];

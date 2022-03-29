@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
 
     [Header("PARTICULAS")]
-    [SerializeField] private ParticleSystem polvoPies;
+    //[SerializeField] private ParticleSystem polvoPies;
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
-            polvoPies.Play();
+            //polvoPies.Play();
         }
     }
 
@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
-            polvoPies.Stop();
+            //polvoPies.Stop();
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
             playerAnimatorController.SetTrigger("PlayerJump");
@@ -218,13 +218,11 @@ public class PlayerController : MonoBehaviour
         _playerAnim.Jump(false);
     }
 
-    void OnTriggerEnter(Collider other)
+     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.tag == "Enemy")
         {
-           
-            other.gameObject.SetActive(false);
-               
+            other.gameObject.SetActive(false); 
         }
         // reducir la vida
         vidaActual -=1;
@@ -235,14 +233,11 @@ public class PlayerController : MonoBehaviour
         barraverde.fillAmount = (float)vidaActual / vidaMax;
         if(vidaActual <= 0)
         {
-         Debug.Log("perdio");
-        
+            Debug.Log("perdio");
         }
-       else
+        else
         {     
            Debug.Log("ahora tengo vida" + vidaActual + "de" + vidaMax);
-        }
-       
-          
-    }
+        } 
+     }
 }
