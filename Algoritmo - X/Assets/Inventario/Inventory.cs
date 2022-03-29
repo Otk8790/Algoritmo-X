@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public PlayerController playerController;
     public TerceraPersona terceraPersona;
-    private PlayerController playerController;
     [Header("Referencia Slots")]
     private bool inventoryEnable;
     public GameObject inventory;
@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
+        inventory.SetActive(false);
         allSlots = slotHolder.transform.childCount;
 
         slot = new GameObject[allSlots];
@@ -40,23 +41,20 @@ public class Inventory : MonoBehaviour
         {
             if (inventory.gameObject.activeSelf)
             {
+                inventory.gameObject.SetActive(false);
                 Time.timeScale = 1f;
                 terceraPersona.enabled = true;
-                inventory.SetActive(false);
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
-                //InventarioCerrado();
             }
             else
             {
+                inventory.gameObject.SetActive(true);
                 Time.timeScale = 0f;
                 terceraPersona.enabled = false;
-                inventory.SetActive(true);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                InventarioAbierto();
             }
-
         }
     }
 
@@ -101,11 +99,9 @@ public class Inventory : MonoBehaviour
     public void InventarioAbierto()
     {
         playerController.puedeMoverse = false;
-        playerController.activarEscudo = false;
     }
     public void InventarioCerrado()
     {
         playerController.puedeMoverse = true;
-        playerController.activarEscudo = true;
     }
 }
