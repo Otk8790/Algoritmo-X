@@ -42,23 +42,26 @@ public class PlayerController : MonoBehaviour
     public bool puedeMoverse;
     public bool activarEscudo;
 
+    [Header("VIDA")]
+    [SerializeField]
+    int vidaMax = 5;
+    int vidaActual;
+    public Image mascaradeDaño;
+    public Image barraverde;
+    public float valorAlfa;
+
 
     [Header("PARTICULAS")]
     [SerializeField] private ParticleSystem polvoPies;
+
+    [Header("CAMARA SHAKE")]
+    [SerializeField] private CameraShake cameraShake;
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
 
-    [Header("VIDA")]
-    int vidaMax = 5;
-    int vidaActual;
-    public Image mascaradeDaño;
-    public TextMeshProUGUI vida;
-    public Image barraverde;
-    public float valorAlfa;
-    public Transform camaraAsacudir;
-    float magnitudSacudida;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -93,7 +96,6 @@ public class PlayerController : MonoBehaviour
 
         Escudo();
 
-        /* checkPolvoPies(); */
         Ataque();
 
         Disparo();
@@ -105,12 +107,12 @@ public class PlayerController : MonoBehaviour
         //InventarioCerrado();
         if (shieldsActive == false && puedeMoverse == true)
         {
+            polvoPies.Play();
             horizontalMove = Input.GetAxis("Horizontal");
             verticalMove = Input.GetAxis("Vertical");
 
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
-            polvoPies.Play();
         }
     }
 
@@ -228,6 +230,7 @@ public class PlayerController : MonoBehaviour
         }
         // reducir la vida
         vidaActual -=1;
+        StartCoroutine(cameraShake.Shake());
         /* SacudirCamara(.5f); */
         valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
         mascaradeDaño.color = new Color(1,1,1, valorAlfa);

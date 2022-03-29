@@ -292,7 +292,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 5
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -312,7 +312,7 @@ ParticleSystemRenderer:
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -2717173831161033057, guid: bd2378e86bbe36b4ab58536a4d7ffc26, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -19786,6 +19786,7 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194232}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -19950,6 +19951,20 @@ MonoBehaviour:
   offset: {x: 5, y: 5, z: 5}
   lerpValue: 0.2
   sensibilidad: 3
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef00d403b21937468d567e85c372f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1.5
+  magnitude: 1.5
 --- !u!1 &978381415
 GameObject:
   m_ObjectHideFlags: 0
@@ -26755,11 +26770,12 @@ MonoBehaviour:
   shieldsActive: 0
   puedeMoverse: 0
   activarEscudo: 0
+  vidaMax: 5
   "mascaradeDa\xF1o": {fileID: 245011258}
-  vida: {fileID: 0}
   barraverde: {fileID: 1193814394}
   valorAlfa: 0
-  camaraAsacudir: {fileID: 0}
+  polvoPies: {fileID: 65201558}
+  cameraShake: {fileID: 963194232}
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
@@ -26772,7 +26788,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 28
-  m_Radius: 3
+  m_Radius: 5.15
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
