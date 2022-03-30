@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public bool shieldsActive = false;
     public bool puedeMoverse;
     public bool activarEscudo;
+
     public float tiempoDeAtaque = 1.5f;
     private float timeAtaque = 0f;
     public float tiempoDeEscudo = 12.0f;
@@ -61,14 +62,21 @@ public class PlayerController : MonoBehaviour
     [Header("CAMARA SHAKE")]
     [SerializeField] private CameraShake cameraShake;
 
-    //[Header("DISPARO")]
-    //[SerializeField] private GameObject projectilePrefab;
+    [Header("DISPARO")]
+    public Transform spawnPoint;
+    public GameObject bullet;
+    public float shotForce = 1500f;
+    //Tiempo
+    public float shotRate = 4.0f;
+    private float shotRateTime = 0f;
+
+
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
 
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -181,8 +189,16 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire2") && player.isGrounded)
         {
-            playerAnimatorController.SetTrigger("Disparar");
-            //Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            if (Time.time> shotRateTime)
+            {
+                playerAnimatorController.SetTrigger("Disparar");
+
+                GameObject newBullet;
+                newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
+                newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+                shotRateTime = Time.time + shotRate;
+                Destroy(newBullet, 2);
+            }
         }
     }
 
@@ -227,12 +243,6 @@ public class PlayerController : MonoBehaviour
     {
         
     }
-    public void EstoyCayendo()
-    {
-        playerAnimatorController.SetBool("IsGrounded", false);
-        _playerAnim.Jump(false);
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))

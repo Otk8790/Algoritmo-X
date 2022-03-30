@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 65201556}
   - component: {fileID: 65201558}
   - component: {fileID: 65201557}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PolvoSalto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6392,14 +6392,14 @@ RectTransform:
   m_GameObject: {fileID: 394147270}
   m_LocalRotation: {x: -0, y: -0, z: 0.48115578, w: 0.8766352}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 3.6, z: 1.4}
+  m_LocalScale: {x: 0.5, y: 2.1, z: 1.4}
   m_Children: []
   m_Father: {fileID: 1214946437}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 57.522}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -190, y: -7}
+  m_AnchoredPosition: {x: 15, y: -6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394147272
@@ -6422,7 +6422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b9fe2b0f0d9b4554bb2b2d5a5bdc0f02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6949,7 +6949,7 @@ RectTransform:
   m_GameObject: {fileID: 449548757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6195231, y: 0.93748, z: 1}
   m_Children: []
   m_Father: {fileID: 502019167}
   m_RootOrder: 0
@@ -6979,8 +6979,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5bbb036d6e539574a84206cff16c898a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7008,7 +7008,7 @@ GameObject:
   - component: {fileID: 470921689}
   - component: {fileID: 470921691}
   - component: {fileID: 470921690}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Particulas_Guantes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11810,7 +11810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491366696}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: WeaponManager
   m_TagString: WeaponManager
   m_Icon: {fileID: 0}
@@ -11843,8 +11843,6 @@ GameObject:
   - component: {fileID: 502019167}
   - component: {fileID: 502019169}
   - component: {fileID: 502019168}
-  - component: {fileID: 502019171}
-  - component: {fileID: 502019170}
   m_Layer: 5
   m_Name: Slot (4)
   m_TagString: Untagged
@@ -11885,7 +11883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11910,69 +11908,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502019166}
   m_CullTransparentMesh: 1
---- !u!114 &502019170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502019166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 502019168}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &502019171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502019166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3884fd1b62205fc43b7db03e02340307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  descripcion: 
-  emty: 0
-  icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
 --- !u!1 &536123184
 GameObject:
   m_ObjectHideFlags: 0
@@ -12962,6 +12897,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639726779}
   m_Mesh: {fileID: 3181945431582109686, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &639981973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639981974}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639981974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639981973}
+  m_LocalRotation: {x: -0.42054132, y: -0.5200693, z: -0.14368562, w: 0.72940207}
+  m_LocalPosition: {x: -0.18319304, y: 0.042625338, z: -0.022177428}
+  m_LocalScale: {x: 0.39370367, y: 0.3936995, z: 0.39369866}
+  m_Children: []
+  m_Father: {fileID: 7207955281336280799}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &687393043
 GameObject:
   m_ObjectHideFlags: 0
@@ -13247,7 +13212,7 @@ RectTransform:
   m_GameObject: {fileID: 702264762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.47841, y: 0.47841, z: 0.47841}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 899375493}
   m_RootOrder: 0
@@ -13270,7 +13235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9647059}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13875,7 +13840,7 @@ GameObject:
   - component: {fileID: 833171930}
   - component: {fileID: 833171932}
   - component: {fileID: 833171931}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: PolvoPies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19434,7 +19399,7 @@ RectTransform:
   m_GameObject: {fileID: 899375492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 702264763}
   - {fileID: 228047948}
@@ -20553,7 +20518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 118, y: 77}
+  m_AnchoredPosition: {x: 105.1, y: 81.3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1214946438
@@ -21312,17 +21277,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306388093}
-  m_LocalRotation: {x: -0, y: -0, z: 0.27742466, w: 0.9607474}
+  m_LocalRotation: {x: -0, y: -0, z: 0.29107323, w: 0.9567008}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.20759921, y: 0.17399454, z: 0.12211}
   m_Children:
   - {fileID: 1655603886}
   m_Father: {fileID: 228047948}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.213}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 33.844}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -99.2, y: 79.6}
+  m_AnchoredPosition: {x: -103.8, y: 82.4}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1306388095
@@ -21917,8 +21882,6 @@ GameObject:
   - component: {fileID: 1428474430}
   - component: {fileID: 1428474432}
   - component: {fileID: 1428474431}
-  - component: {fileID: 1428474434}
-  - component: {fileID: 1428474433}
   m_Layer: 5
   m_Name: Slot (3)
   m_TagString: Untagged
@@ -21935,7 +21898,7 @@ RectTransform:
   m_GameObject: {fileID: 1428474429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.12211, y: 0.12211, z: 0.12211}
+  m_LocalScale: {x: 0.07823435, y: 0.108370185, z: 0.12211}
   m_Children:
   - {fileID: 2114396128}
   m_Father: {fileID: 228047948}
@@ -21959,7 +21922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21984,69 +21947,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428474429}
   m_CullTransparentMesh: 1
---- !u!114 &1428474433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428474429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1428474431}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1428474434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428474429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3884fd1b62205fc43b7db03e02340307, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  ID: 0
-  type: 
-  descripcion: 
-  emty: 0
-  icon: {fileID: 0}
-  slotIconGameObject: {fileID: 0}
 --- !u!1 &1429058033
 GameObject:
   m_ObjectHideFlags: 0
@@ -23240,14 +23140,14 @@ RectTransform:
   m_GameObject: {fileID: 1655603885}
   m_LocalRotation: {x: -0, y: -0, z: 0.7090173, w: 0.7051912}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45694098, y: 2.2988, z: 1}
+  m_LocalScale: {x: 1.0561277, y: 2.2988, z: 1}
   m_Children: []
   m_Father: {fileID: 1306388094}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.31}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -19, y: 102}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1655603887
@@ -23270,8 +23170,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bf856efc1b34cc34e9b1505479b6907c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -23699,7 +23599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1841363547}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Transform_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24953,8 +24853,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5bbb036d6e539574a84206cff16c898a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -25272,6 +25172,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6792480094065189212, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: bf856efc1b34cc34e9b1505479b6907c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
 --- !u!1 &6645615342525682
@@ -25459,7 +25363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6560269306490506648}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25475,7 +25379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7101306659118778425}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25589,7 +25493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6807270478724140135}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25811,7 +25715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6731492912766497298}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26188,7 +26092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4167280743018606596}
   - component: {fileID: 1630794973171050348}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26560,7 +26464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6229831008539869883}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26617,7 +26521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3418238895725030982}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26723,7 +26627,7 @@ GameObject:
   - component: {fileID: 919132147739101041}
   - component: {fileID: 919132147739101043}
   - component: {fileID: 919132147739101044}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -26772,7 +26676,7 @@ MonoBehaviour:
   shieldsActive: 0
   puedeMoverse: 0
   activarEscudo: 0
-  tiempoDeAtaque: 1.5
+  tiempoDeAtaque: 1.4
   tiempoDeEscudo: 12
   vidaMax: 5
   "mascaradeDa\xF1o": {fileID: 245011258}
@@ -26780,6 +26684,10 @@ MonoBehaviour:
   valorAlfa: 0
   polvoPies: {fileID: 65201558}
   cameraShake: {fileID: 963194232}
+  spawnPoint: {fileID: 639981974}
+  bullet: {fileID: 7232905125431917745, guid: 7a5727c3b1a5ef04cb0a9d2d51c12a4f, type: 3}
+  shotForce: 1500
+  shotRate: 3
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
@@ -27201,7 +27109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9151169636462004108}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27474,7 +27382,7 @@ GameObject:
   - component: {fileID: 8740634151685166077}
   - component: {fileID: 1340225781212846439}
   - component: {fileID: 1340225781212846440}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Escudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28479,7 +28387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3353877073721682653}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28831,7 +28739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8639097211437678481}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmCollarbone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28847,7 +28755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5326339220192830994}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28863,7 +28771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 843786117896895730}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28879,7 +28787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 477182887759161942}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28895,7 +28803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2418747143884141955}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28911,7 +28819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1041553895699076219}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRibcage001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29008,7 +28916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2222997579071451331}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29610,7 +29518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4380987378940430901}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30238,7 +30146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1930153198797929581}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRLegAnkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30288,7 +30196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4908642740190286640}
   - component: {fileID: 701020856493785664}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Gabardina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30337,7 +30245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 270199358156645718}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGSpine5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30503,7 +30411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6665675755541256929}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30534,7 +30442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1774222363352518354}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30702,7 +30610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3047096690711117118}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLLegDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31357,7 +31265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2870437700822868346}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31836,7 +31744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3278894481411524948}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRLegDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32047,7 +31955,7 @@ GameObject:
   - component: {fileID: 3006278646222880039}
   - component: {fileID: 7547151524145016516}
   - component: {fileID: 6546735890612974416}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32176,7 +32084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588152988716080504}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32261,7 +32169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 631501263443117680}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32826,7 +32734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 653287940300795971}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32897,7 +32805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6798277039455882829}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33108,7 +33016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5743669446491810366}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGSpine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33124,7 +33032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2372733943963326839}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33551,7 +33459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6037720032211523327}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33567,7 +33475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3519702485786886915}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLLegAnkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33707,7 +33615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1752262353207558996}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33803,7 +33711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7263459466944744878}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34120,7 +34028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6543166705194263052}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34647,6 +34555,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6792480094065189212, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300000, guid: bf856efc1b34cc34e9b1505479b6907c, type: 3}
+    - target: {fileID: 6792480094065189212, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
       propertyPath: playerWeapon
       value: 0
       objectReference: {fileID: 0}
@@ -34876,7 +34788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2923906870942421240}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGHub001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34909,7 +34821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7052090216822275974}
   - component: {fileID: 8075795099013334925}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Guante_Rigth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34968,7 +34880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6179070468912065060}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35021,7 +34933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7002254045060888608}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35171,6 +35083,7 @@ Transform:
   - {fileID: 4269461406348490847}
   - {fileID: 5326339220192830994}
   - {fileID: 470921689}
+  - {fileID: 639981974}
   m_Father: {fileID: 2870437700822868346}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 74.2891, y: -31.878159, z: -21.416836}
@@ -35459,7 +35372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795095552122524120}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35530,7 +35443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7207955281336280799}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmPalm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35805,7 +35718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3037049264407052640}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGSpine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35901,7 +35814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8641301282715371039}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35933,7 +35846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7918221064645946416}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36208,7 +36121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4657309760402876332}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGSpine4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36224,7 +36137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5146638300628277120}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36295,7 +36208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8149584466000211080}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36393,7 +36306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1009535418630553944}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36474,7 +36387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324562455909299069}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGSpine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36490,7 +36403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8135763215688376758}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36641,7 +36554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6434934479344432992}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36875,7 +36788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5680726987899050070}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37008,7 +36921,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6459336273057159453}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArmDigit42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37087,7 +37000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4269461406348490847}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37144,7 +37057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6523903797033893315}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRArmDigit23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37218,7 +37131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8061673423290570324}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGRibcage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37242,7 +37155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2859973423165664395}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lucian_Model_RUN_CATRIGLArm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
