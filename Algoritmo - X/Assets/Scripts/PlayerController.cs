@@ -227,18 +227,6 @@ public class PlayerController : MonoBehaviour
         puedeMoverse = true;
 
     }
-    /* private void checkPolvoPies()
-    {
-        if (puedoSaltar == true && horizontalMove != 0)
-        {
-            emisionPolvoPies.rateOverTime = 50;
-        }
-        else
-        {
-            emisionPolvoPies.rateOverTime = 0;
-        }
-    } */
-
     private void OnAnimatorMove()
     {
         
