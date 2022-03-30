@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour
     [Header("PARTICULAS")]
     [SerializeField] private ParticleSystem polvoPies;
 
-    [Header("CAMARA SHAKE")]
-    [SerializeField] private CameraShake cameraShake;
+    /* [Header("CAMARA SHAKE")]
+    [SerializeField] private CameraShake cameraShake; */
 
     [Header("DISPARO")]
     public Transform spawnPoint;
@@ -239,7 +239,7 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             // reducir la vida
             vidaActual -= 1;
-            StartCoroutine(cameraShake.Shake());
+            /* StartCoroutine(cameraShake.Shake()); */
             /* SacudirCamara(.5f); */
             valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
             mascaradeDaño.color = new Color(1, 1, 1, valorAlfa);

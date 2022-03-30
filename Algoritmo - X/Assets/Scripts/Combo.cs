@@ -40,29 +40,29 @@ public class Combo : MonoBehaviour
     {
         puedo_dar_click = false;
 
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Attack01_Baston_Lucian") && cantidad_click == 1)
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Combo") && cantidad_click == 1)
         {
             animator.SetInteger("Ataque", 0);
             puedo_dar_click = true;
             cantidad_click = 0;
         }
-        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack01_Baston_Lucian") && cantidad_click >= 2)
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Combo") && cantidad_click >= 2)
         {
             animator.SetInteger("Ataque", 2);
             puedo_dar_click = true;
         }
-        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack02_Baston_Lucian") && cantidad_click == 2)
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Combo2") && cantidad_click == 2)
         {
             animator.SetInteger("Ataque", 0);
             puedo_dar_click = true;
             cantidad_click = 0;
         }
-        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack02_Baston_Lucian") && cantidad_click >= 3)
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Combo2") && cantidad_click >= 3)
         {
             animator.SetInteger("Ataque", 3);
             puedo_dar_click = true;
         }
-        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack03_Baston_Lucian"))
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("Combo3"))
         {
             animator.SetInteger("Ataque", 0);
             puedo_dar_click = true;
