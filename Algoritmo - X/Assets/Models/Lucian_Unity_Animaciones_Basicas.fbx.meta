@@ -197,8 +197,8 @@ ModelImporter:
       name: Jump_Lucian
       takeName: Take 001
       internalID: 0
-      firstFrame: 166
-      lastFrame: 180
+      firstFrame: 164
+      lastFrame: 175
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
