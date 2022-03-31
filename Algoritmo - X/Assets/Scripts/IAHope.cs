@@ -9,6 +9,8 @@ public class IAHope : MonoBehaviour
     private bool estarAlerta;
     public Transform player;
     public float speed;
+
+    public Animator playerAnimatorController;
     void Start()
     {
         //transform.rotation = Quaternion.Euler(new Vector3(-90f, 180f, 0f));
