@@ -26646,7 +26646,7 @@ MonoBehaviour:
   shieldsActive: 0
   puedeMoverse: 0
   activarEscudo: 0
-  tiempoDeAtaque: 1
+  tiempoDeAtaque: 1.5
   tiempoDeEscudo: 12
   vidaMax: 5
   "mascaradeDa\xF1o": {fileID: 245011258}
@@ -26656,7 +26656,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 639981974}
   bullet: {fileID: 7232905125431917745, guid: 7a5727c3b1a5ef04cb0a9d2d51c12a4f, type: 3}
   shotForce: 1500
-  shotRate: 2
+  shotRate: 1.8
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
