@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33a5bc88-812b-448a-b3a3-dd1165272457" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Algoritmo - X/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Algoritmo - X/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Lucian_Animations/Lucian_Unity_Animaciones_Basicas.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Lucian_Animations/Lucian_Unity_Animaciones_Basicas.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Lucian_Unity_Animaciones_Basicas.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Lucian_Unity_Animaciones_Basicas.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo_Personajes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo_Personajes.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +73,7 @@
       <workItem from="1647417504855" duration="1201000" />
       <workItem from="1647456444280" duration="618000" />
       <workItem from="1647485758672" duration="15992000" />
+      <workItem from="1648756562663" duration="1259000" />
     </task>
     <servers />
   </component>
