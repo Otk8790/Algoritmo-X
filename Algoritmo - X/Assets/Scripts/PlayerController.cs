@@ -118,6 +118,9 @@ public class PlayerController : MonoBehaviour
     public void movimiento()
     {
         //InventarioCerrado();
+
+        if(ControlDialogos.enDialogo)
+            return;
         if (shieldsActive == false && puedeMoverse == true)
         {
             polvoPies.Play();
@@ -143,6 +146,8 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerSkills()
     {
+        if(ControlDialogos.enDialogo)
+            return;
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
@@ -173,6 +178,8 @@ public class PlayerController : MonoBehaviour
 
     private void Ataque()
     {
+        if(ControlDialogos.enDialogo)
+            return;
         if (Input.GetButtonDown("Fire1") && player.isGrounded)
         {
             if (Time.time>timeAtaque)
@@ -185,6 +192,8 @@ public class PlayerController : MonoBehaviour
 
     private void Disparo()
     {
+        if(ControlDialogos.enDialogo)
+            return;
         if (Input.GetButtonDown("Fire2") && player.isGrounded)
         {
             if (Time.time> shotRateTime)
@@ -202,6 +211,8 @@ public class PlayerController : MonoBehaviour
 
     private void Escudo()
     {
+        if(ControlDialogos.enDialogo)
+            return;
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
             if (activarEscudo == true && Time.time>timeEscudo)
