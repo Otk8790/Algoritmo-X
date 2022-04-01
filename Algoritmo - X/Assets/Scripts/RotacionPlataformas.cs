@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RotacionPlataformas : MonoBehaviour
 {
+    public float x;
+    public float y;
+    public float z;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,7 @@ public class RotacionPlataformas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(new Vector3(x, y, z) * Time.deltaTime);
     }
+
 }
