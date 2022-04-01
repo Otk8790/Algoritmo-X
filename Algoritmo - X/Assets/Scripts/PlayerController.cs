@@ -38,8 +38,11 @@ public class PlayerController : MonoBehaviour
     [Header("CONDICIONES")]
     public bool shieldsActive = false;
     public bool puedeMoverse;
+    public bool puedeAtacar;
     public bool activarEscudo;
 
+
+    [Header("TiEMPO")]
     public float tiempoDeAtaque = 1.5f;
     private float timeAtaque = 0f;
     public float tiempoDeEscudo = 12.0f;
@@ -79,6 +82,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        puedeAtacar = true;
         activarEscudo = true;
         puedeMoverse = true;
         
@@ -117,11 +121,9 @@ public class PlayerController : MonoBehaviour
     }
     public void movimiento()
     {
-        //InventarioCerrado();
-
         if(ControlDialogos.enDialogo)
             return;
-        if (shieldsActive == false && puedeMoverse == true)
+        if (puedeMoverse)
         {
             polvoPies.Play();
             horizontalMove = Input.GetAxis("Horizontal");
@@ -131,7 +133,6 @@ public class PlayerController : MonoBehaviour
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
         }
     }
-
     void camDirection()
     {
         camForward = mainCamera.transform.forward;
@@ -180,7 +181,7 @@ public class PlayerController : MonoBehaviour
     {
         if(ControlDialogos.enDialogo)
             return;
-        if (Input.GetButtonDown("Fire1") && player.isGrounded)
+        if (Input.GetButtonDown("Fire1") && player.isGrounded && puedeAtacar)
         {
             if (Time.time>timeAtaque)
             {
@@ -189,12 +190,18 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    public void EmpiezaDisparo()
+    {
+        puedeMoverse = false;
+        puedeAtacar = true;
+        activarEscudo = false;
+    }
 
     private void Disparo()
     {
         if(ControlDialogos.enDialogo)
             return;
-        if (Input.GetButtonDown("Fire2") && player.isGrounded)
+        if (Input.GetButtonDown("Fire2") && player.isGrounded && puedeAtacar)
         {
             if (Time.time> shotRateTime)
             {
@@ -208,6 +215,12 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    public void TerminaDisparo()
+    {
+        puedeMoverse = true;
+        puedeAtacar = true;
+        activarEscudo = true;
+    }
 
     private void Escudo()
     {
@@ -215,7 +228,7 @@ public class PlayerController : MonoBehaviour
             return;
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
-            if (activarEscudo == true && Time.time>timeEscudo)
+            if (activarEscudo && Time.time>timeEscudo)
             {
                 shieldsActive = true;
                 _shieldGameObject.SetActive(true);
