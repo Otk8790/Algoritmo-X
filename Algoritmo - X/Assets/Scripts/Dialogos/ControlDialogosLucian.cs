@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ControlDialogos : MonoBehaviour
+public class ControlDialogosLucian : MonoBehaviour
 {
     // Singleton
-    public static ControlDialogos singleton;
+    public static ControlDialogosLucian singleton;
     public static bool enDialogo;
     public GameObject dialogo;
     
@@ -18,8 +18,8 @@ public class ControlDialogos : MonoBehaviour
     
     public ConfigDialogos configuracion;
 
-    [Header("Ensayos")]
-    public Frase[] dialogoEnsayo;
+    [Header("Palabras Lucian")]
+    public FraseLucian[] dialogoLucian;
 
     private void Awake()
     {
@@ -37,6 +37,7 @@ public class ControlDialogos : MonoBehaviour
     void Start()
     {
         dialogo.SetActive(false);
+        Prueba();
     }
 
     // Update is called once per frame
@@ -45,7 +46,7 @@ public class ControlDialogos : MonoBehaviour
         
     }
 
-    public IEnumerator Decir(Frase[] _dialogo)
+    public IEnumerator Decir(FraseLucian[] _dialogo)
     {
         dialogo.SetActive(true);
         enDialogo = true;
@@ -72,51 +73,19 @@ public class ControlDialogos : MonoBehaviour
     /* [ContextMenu("Activar prueba")] */
     public void Prueba()
     {
-        StartCoroutine(Decir(dialogoEnsayo));
+        StartCoroutine(Decir(dialogoLucian));
     }
 }
 
 [System.Serializable]
-public class Frase 
+public class FraseLucian
 {
     public string texto;
-    public int personaje;
 }
 [System.Serializable]
-public class EstadoDialogo
+public class EstadoDialogoLucian
 {
     public Frase[] frases;
 }
 
-/* [System.Serializable]
-public class CaraDialogo
-{
-    public string letra;
-    public Sprite cara;
-}
-
-[System.Serializable]
-public class PersonajeDialogo
-{
-    public CaraDialogo[] caras;
-    public Sprite GetCara(string l)
-    {
-        int indice = 0;
-        for (int i = 0; i < caras.Length; i++)
-        {
-            if(caras[i].letra == l)
-            {
-                indice = i;
-                break;
-            }
-        }
-        return caras[indice].cara;
-
-    }
-    public Sprite GetCara(int i)
-    {
-        i = Mathf.Clamp(i, 0, caras.Length - 1);
-        return(caras[i].cara);
-    }
-} */
 
