@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426ccb9943e2c0944b875293e3ed611e, type: 3}
+  m_Name: Dialogos
+  m_EditorClassIdentifier: 
+  tiempoLetra: 0.2
+  personajes:
+  - caras:
+    - letra: 
+      cara: {fileID: 21300000, guid: be0d6a45537a1a64e9e6c4ce47a2d58a, type: 3}
+    - letra: A
+      cara: {fileID: 21300000, guid: fccea209f9ea7b1488225287813f4e38, type: 3}
+  teclaSkip: 32
+  teclaSiguienteFrase: 32
+  teclaInicioDialogo: 98
