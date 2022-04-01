@@ -6,7 +6,7 @@ public class Dialogador : MonoBehaviour
 {
     public int estadoActual = 0;
     public EstadoDialogo[] estados;
-
+    public Collider ocultar;
     public GameObject dialogueMark;
     
     // Start is called before the first frame update
@@ -29,7 +29,14 @@ public class Dialogador : MonoBehaviour
             if(Input.GetKeyDown(ControlDialogos.singleton.configuracion.teclaInicioDialogo))
             {
                 StartCoroutine(ControlDialogos.singleton.Decir(estados[estadoActual].frases));
+                StartCoroutine(DesactivarDialogo());
             }
         }
+    }
+    IEnumerator DesactivarDialogo()
+    {
+        yield return new WaitForSeconds(3.0f);
+        ocultar.enabled = false;
+        dialogueMark.SetActive(false);
     }
 }
