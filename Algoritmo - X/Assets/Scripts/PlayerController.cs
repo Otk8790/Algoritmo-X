@@ -70,13 +70,14 @@ public class PlayerController : MonoBehaviour
     //Tiempo
     public float shotRate = 4.0f;
     private float shotRateTime = 0f;
+    public Transform puntoDeDisparo;
+    public float daño = 20f;
 
 
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
-
 
 
     // Start is called before the first frame update
@@ -199,6 +200,7 @@ public class PlayerController : MonoBehaviour
 
     private void Disparo()
     {
+        DisparoDirecto();
         if(ControlDialogos.enDialogo)
             return;
         if (Input.GetButtonDown("Fire2") && player.isGrounded && puedeAtacar)
@@ -212,6 +214,26 @@ public class PlayerController : MonoBehaviour
                 newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
                 shotRateTime = Time.time + shotRate;
                 Destroy(newBullet, 2);
+            }
+        }
+    }
+
+    void DisparoDirecto()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(puntoDeDisparo.position, puntoDeDisparo.forward,out hit))
+        {
+            if(hit.transform.CompareTag("Enemy"))
+            {
+                Vida vida = hit.transform.GetComponent<Vida>();
+                if (vida == null)
+                {
+                    throw new System.Exception("No se encontro el componente de Enemigo");
+                }
+                else
+                {
+                    vida.RecibirDaño(daño);
+                }
             }
         }
     }
