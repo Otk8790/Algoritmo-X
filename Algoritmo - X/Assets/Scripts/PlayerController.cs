@@ -200,7 +200,6 @@ public class PlayerController : MonoBehaviour
 
     private void Disparo()
     {
-        DisparoDirecto();
         if(ControlDialogos.enDialogo)
             return;
         if (Input.GetButtonDown("Fire2") && player.isGrounded && puedeAtacar)
@@ -214,26 +213,6 @@ public class PlayerController : MonoBehaviour
                 newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
                 shotRateTime = Time.time + shotRate;
                 Destroy(newBullet, 2);
-            }
-        }
-    }
-
-    void DisparoDirecto()
-    {
-        RaycastHit hit;
-        if(Physics.Raycast(puntoDeDisparo.position, puntoDeDisparo.forward,out hit))
-        {
-            if(hit.transform.CompareTag("Enemy"))
-            {
-                Vida vida = hit.transform.GetComponent<Vida>();
-                if (vida == null)
-                {
-                    throw new System.Exception("No se encontro el componente de Enemigo");
-                }
-                else
-                {
-                    vida.RecibirDaño(daño);
-                }
             }
         }
     }
