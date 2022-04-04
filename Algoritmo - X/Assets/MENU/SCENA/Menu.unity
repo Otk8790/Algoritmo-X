@@ -1985,13 +1985,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CR\xC9DITOS\r\n\r\nHISTORIA, ARTE & DISE\xD1O POR:\r\nLAURA CAMILA GONZ\xC1LEZ
-    TRUJILLO & FRANK DAVID OTECA CORTES\r\n\r\nMODELOS 3D & NIVELES\r\nFRANK  DAVID
+  m_text: "CR\xC9DITOS\r\n\r\nHISTORIA, ARTE & DISE\xD1O POR\n\nLAURA CAMILA GONZ\xC1LEZ
+    TRUJILLO & FRANK DAVID OTECA CORTES\r\n\r\nMODELOS 3D & NIVELES\r\n\nFRANK  DAVID
     OTECA CORTES\r\nHUBER ANDR\xC9S PARRA MOLINA\r\nJUAN DAVID PE\xD1A D\xCDAZ\r\nJORGE
-    IVAN LOSADA TOVAR\r\n\r\nPROGRAMACI\xD3N & UI\r\nJUAN SEBASTI\xC1N MURCIA Z\xDA\xD1IGA\r\nHUBER
-    ANDR\xC9S PARRA MOLINA\r\nDIANA CAROLINA GARZ\xD3N ENRIQUEZ\r\nYEISON POLO OSORIO\r\n\r\nAUDIO
-    (JOSU\xC9 PI\xD1\xD3N N\xDDU\xD1EZ (M\xE9xico D.F.) \"BIO/JOSH\")\r\n\r\nM\xDASICA
-    (JOSU\xC9 PI\xD1\xD3N N\xDA\xD1EZ (M\xE9xico D.F.) \"BIO/JOSH\")\n\n\n\n\n\r\n\r\nSERVICIO
+    IVAN LOSADA TOVAR\r\n\r\nPROGRAMACI\xD3N & UI\r\n\nJUAN SEBASTI\xC1N MURCIA Z\xDA\xD1IGA\r\nHUBER
+    ANDR\xC9S PARRA MOLINA\r\nDIANA CAROLINA GARZ\xD3N ENRIQUEZ\r\nYEISON POLO OSORIO\r\n\r\nAUDIO\n
+    JOSU\xC9 PI\xD1\xD3N N\xDA\xD1EZ  (M\xE9xico D.F. \"BIO/JOSH\")\r\n\r\nM\xDASICA\n
+    JOSU\xC9 PI\xD1\xD3N N\xDA\xD1EZ (M\xE9xico D.F.  \"BIO/JOSH\")\n\n\n\n\n\r\n\r\n\n\n\n\n\n\n\n\nSERVICIO
     NACIONAL DE APRENDIZAJE \"SENA\", 2022\r\n\r\n\xA1GRACIAS POR JUGAR!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2019,8 +2019,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.7
-  m_fontSizeBase: 26.7
+  m_fontSize: 23
+  m_fontSizeBase: 23
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6436,7 +6436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1487109943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8881,7 +8881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1933917325
 RectTransform:
   m_ObjectHideFlags: 0
