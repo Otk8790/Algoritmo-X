@@ -86,5 +86,5 @@ public class Enemigo : MonoBehaviour
     {
       ani.SetBool("attack", false);
       atacando = false; 
-    }
+    } 
 }

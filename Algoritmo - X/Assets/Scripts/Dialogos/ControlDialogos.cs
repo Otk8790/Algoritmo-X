@@ -8,6 +8,7 @@ public class ControlDialogos : MonoBehaviour
 {
     // Singleton
     public static ControlDialogos singleton;
+    public TerceraPersona terceraPersona;
     public static bool enDialogo;
     public GameObject dialogo;
     
@@ -49,6 +50,7 @@ public class ControlDialogos : MonoBehaviour
     {
         dialogo.SetActive(true);
         enDialogo = true;
+        terceraPersona.enabled = false;
         for (int i = 0; i < _dialogo.Length; i++)
         {
             txtDialogo.text = "";
@@ -68,6 +70,7 @@ public class ControlDialogos : MonoBehaviour
         }
         dialogo.SetActive(false);
         enDialogo = false;
+        terceraPersona.enabled = true;
     }
     /* [ContextMenu("Activar prueba")] */
     public void Prueba()
@@ -88,35 +91,4 @@ public class EstadoDialogo
     public Frase[] frases;
 }
 
-/* [System.Serializable]
-public class CaraDialogo
-{
-    public string letra;
-    public Sprite cara;
-}
-
-[System.Serializable]
-public class PersonajeDialogo
-{
-    public CaraDialogo[] caras;
-    public Sprite GetCara(string l)
-    {
-        int indice = 0;
-        for (int i = 0; i < caras.Length; i++)
-        {
-            if(caras[i].letra == l)
-            {
-                indice = i;
-                break;
-            }
-        }
-        return caras[indice].cara;
-
-    }
-    public Sprite GetCara(int i)
-    {
-        i = Mathf.Clamp(i, 0, caras.Length - 1);
-        return(caras[i].cara);
-    }
-} */
 
