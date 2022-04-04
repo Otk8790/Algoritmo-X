@@ -24,7 +24,7 @@ public class IAHope : MonoBehaviour
         {
             //transform.LookAt(player)
             transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, transform.position.y, player.position.z), speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
             //transform.LookAt(new Vector3(player.rotation.x, transform.rotation.y, player.rotation.z));
         }
     }

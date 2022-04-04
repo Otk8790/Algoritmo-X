@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public PlayerController playerController;
+    //public PlayerController playerController;
     public TerceraPersona terceraPersona;
     [Header("Referencia Slots")]
     private bool inventoryEnable;
@@ -94,13 +94,5 @@ public class Inventory : MonoBehaviour
             }
             return;
         }
-    }
-    public void InventarioAbierto()
-    {
-        playerController.puedeMoverse = false;
-    }
-    public void InventarioCerrado()
-    {
-        playerController.puedeMoverse = true;
     }
 }

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 28409916}
   m_Layer: 0
   m_Name: Box085 (27)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 31235544}
   m_Layer: 0
   m_Name: Box065 (13)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5221,7 +5221,7 @@ GameObject:
   - component: {fileID: 106175838}
   m_Layer: 0
   m_Name: Box085 (28)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5317,7 +5317,7 @@ GameObject:
   - component: {fileID: 125201800}
   m_Layer: 0
   m_Name: Box085 (22)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5514,7 +5514,7 @@ GameObject:
   - component: {fileID: 178274939}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5609,7 +5609,7 @@ GameObject:
   - component: {fileID: 204703165}
   m_Layer: 0
   m_Name: Box080 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5992,7 +5992,7 @@ GameObject:
   - component: {fileID: 261537242}
   m_Layer: 0
   m_Name: Box085 (9)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6088,7 +6088,7 @@ GameObject:
   - component: {fileID: 266713582}
   m_Layer: 0
   m_Name: Box086 (3)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6318,7 +6318,7 @@ GameObject:
   - component: {fileID: 280297618}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6430,16 +6430,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394147270}
-  m_LocalRotation: {x: -0, y: -0, z: 0.48115578, w: 0.8766352}
+  m_LocalRotation: {x: -0, y: -0, z: 0.42399102, w: 0.9056664}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 2.1, z: 1.4}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1.4}
   m_Children: []
   m_Father: {fileID: 1214946437}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 57.522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 50.174}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15, y: -6}
+  m_AnchoredPosition: {x: -218, y: -319}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394147272
@@ -6462,7 +6462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b9fe2b0f0d9b4554bb2b2d5a5bdc0f02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 43d256cf5343ebe428dfe80d288aede9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6513,7 +6513,7 @@ GameObject:
   - component: {fileID: 405459674}
   m_Layer: 0
   m_Name: Box065 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6609,7 +6609,7 @@ GameObject:
   - component: {fileID: 414403746}
   m_Layer: 0
   m_Name: Box085 (13)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6833,7 +6833,7 @@ GameObject:
   - component: {fileID: 429533543}
   m_Layer: 0
   m_Name: Box065 (11)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6929,7 +6929,7 @@ GameObject:
   - component: {fileID: 431129322}
   m_Layer: 0
   m_Name: Box085 (30)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7104,7 +7104,7 @@ GameObject:
   - component: {fileID: 437809184}
   m_Layer: 0
   m_Name: Box085 (16)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7276,7 +7276,7 @@ GameObject:
   - component: {fileID: 459028588}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19203,7 +19203,7 @@ GameObject:
   - component: {fileID: 500554657}
   m_Layer: 0
   m_Name: Box050 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19367,7 +19367,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73360
+  m_Name: pb_Mesh27318
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19539,7 +19539,7 @@ GameObject:
   - component: {fileID: 538144000}
   m_Layer: 0
   m_Name: Box012 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19635,7 +19635,7 @@ GameObject:
   - component: {fileID: 556894390}
   m_Layer: 0
   m_Name: Box085 (20)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19731,7 +19731,7 @@ GameObject:
   - component: {fileID: 563912568}
   m_Layer: 0
   m_Name: Box065 (3)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19919,6 +19919,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6469708752745145133, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
   m_PrefabInstance: {fileID: 2143266724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &606755805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606755806}
+  m_Layer: 0
+  m_Name: Point (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &606755806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606755805}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.76, y: -1.16, z: -10.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126103301}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &608487964
 GameObject:
   m_ObjectHideFlags: 0
@@ -19933,7 +19963,7 @@ GameObject:
   - component: {fileID: 608487966}
   m_Layer: 0
   m_Name: Box050 (3)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20149,7 +20179,7 @@ GameObject:
   - component: {fileID: 617818102}
   m_Layer: 0
   m_Name: Box085 (15)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20338,7 +20368,7 @@ GameObject:
   - component: {fileID: 634150562}
   m_Layer: 0
   m_Name: Box065 (8)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20420,6 +20450,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634150560}
   m_Mesh: {fileID: 7404775158862943375, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &638452621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638452622}
+  m_Layer: 0
+  m_Name: Point (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &638452622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638452621}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 69.96, y: 8.44, z: -81.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126103301}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &639981973
 GameObject:
   m_ObjectHideFlags: 0
@@ -20464,7 +20524,7 @@ GameObject:
   - component: {fileID: 652162952}
   m_Layer: 0
   m_Name: Box065 (7)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20626,7 +20686,7 @@ GameObject:
   - component: {fileID: 701431677}
   m_Layer: 0
   m_Name: Box085 (10)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20786,7 +20846,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74004
+  m_Name: pb_Mesh27990
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20958,7 +21018,7 @@ GameObject:
   - component: {fileID: 718321416}
   m_Layer: 0
   m_Name: Box072 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21054,7 +21114,7 @@ GameObject:
   - component: {fileID: 724982472}
   m_Layer: 0
   m_Name: Box014 (6)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21150,7 +21210,7 @@ GameObject:
   - component: {fileID: 728305496}
   m_Layer: 0
   m_Name: Box086 (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21313,7 +21373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73744
+  m_Name: pb_Mesh27700
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21485,7 +21545,7 @@ GameObject:
   - component: {fileID: 769739862}
   m_Layer: 0
   m_Name: Box065 (16)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21581,7 +21641,7 @@ GameObject:
   - component: {fileID: 782774419}
   m_Layer: 0
   m_Name: Box085 (31)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21886,7 +21946,7 @@ GameObject:
   - component: {fileID: 807007884}
   m_Layer: 0
   m_Name: Box086 (4)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26853,7 +26913,7 @@ GameObject:
   - component: {fileID: 840581030}
   m_Layer: 0
   m_Name: Box050 (4)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26935,6 +26995,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840581028}
   m_Mesh: {fileID: -4805025943348150233, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &854862455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 854862457}
+  - component: {fileID: 854862456}
+  m_Layer: 0
+  m_Name: Check Point (2)
+  m_TagString: checkpoint
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &854862456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854862455}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &854862457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854862455}
+  m_LocalRotation: {x: -0, y: -0.22185189, z: -0, w: 0.97508043}
+  m_LocalPosition: {x: 39.22, y: 3.83, z: -52.66}
+  m_LocalScale: {x: 5.97828, y: 3.463, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: -25.636, z: 0}
 --- !u!1 &859410172
 GameObject:
   m_ObjectHideFlags: 0
@@ -26949,7 +27053,7 @@ GameObject:
   - component: {fileID: 859410174}
   m_Layer: 0
   m_Name: Box050 (5)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27031,6 +27135,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859410172}
   m_Mesh: {fileID: -4805025943348150233, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &877252619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877252620}
+  m_Layer: 3
+  m_Name: 3Persona
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &877252620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877252619}
+  m_LocalRotation: {x: 0.05690189, y: -0, z: -0, w: 0.99837977}
+  m_LocalPosition: {x: -2.1000004, y: 30.019999, z: -45.4}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_Children: []
+  m_Father: {fileID: 543450651927109077}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 6.524, y: 180, z: 0}
 --- !u!1 &894208428
 GameObject:
   m_ObjectHideFlags: 0
@@ -27045,7 +27179,7 @@ GameObject:
   - component: {fileID: 894208430}
   m_Layer: 0
   m_Name: Box085 (14)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27218,7 +27352,7 @@ GameObject:
   - component: {fileID: 943148525}
   m_Layer: 0
   m_Name: Box029 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27314,7 +27448,7 @@ GameObject:
   - component: {fileID: 945782964}
   m_Layer: 0
   m_Name: Box037 (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27410,7 +27544,7 @@ GameObject:
   - component: {fileID: 945926561}
   m_Layer: 0
   m_Name: Box033 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27506,6 +27640,7 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194232}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27571,13 +27706,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.11007501, y: 0.8844733, z: -0.26421088, w: -0.36848754}
-  m_LocalPosition: {x: 10.3, y: 1.7, z: -1.9}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.99837965, z: -0.056905694, w: 0}
+  m_LocalPosition: {x: 10.29, y: -4.05, z: 16.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 33.264, y: 225.235, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.524, y: 180, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27662,7 +27797,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b18ba66c94ce76a4faa67eae2f9d11b4, type: 3}
   m_Name: 
@@ -27670,6 +27805,21 @@ MonoBehaviour:
   offset: {x: 5, y: 5, z: 5}
   lerpValue: 0.2
   sensibilidad: 3
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f3f66b36befdb41bc2e83846634a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstPerson: {fileID: 1072999709}
+  ThirtPerson: {fileID: 877252620}
+  vista: 0
 --- !u!1 &978381415
 GameObject:
   m_ObjectHideFlags: 0
@@ -27777,7 +27927,7 @@ GameObject:
   - component: {fileID: 986138791}
   m_Layer: 0
   m_Name: Box065 (9)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27873,7 +28023,7 @@ GameObject:
   - component: {fileID: 991359651}
   m_Layer: 0
   m_Name: Box008 (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28045,7 +28195,7 @@ GameObject:
   - component: {fileID: 1043957026}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34537,6 +34687,36 @@ Transform:
   m_Father: {fileID: 543450653032857979}
   m_RootOrder: 141
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1072999708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072999709}
+  m_Layer: 0
+  m_Name: 1Persona
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1072999709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072999708}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.109996796, y: 25.12, z: -1.2000084}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_Children: []
+  m_Father: {fileID: 543450651927109077}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1106919092
 GameObject:
   m_ObjectHideFlags: 0
@@ -34551,7 +34731,7 @@ GameObject:
   - component: {fileID: 1106919094}
   m_Layer: 0
   m_Name: Box030 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34647,7 +34827,7 @@ GameObject:
   - component: {fileID: 1108432070}
   m_Layer: 0
   m_Name: Box085 (21)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34729,6 +34909,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108432068}
   m_Mesh: {fileID: -211450876979826779, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &1126103300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126103301}
+  m_Layer: 0
+  m_Name: Control point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126103301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126103300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 606755806}
+  - {fileID: 1229953250}
+  - {fileID: 638452622}
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130994154
 GameObject:
   m_ObjectHideFlags: 0
@@ -34743,7 +34956,7 @@ GameObject:
   - component: {fileID: 1130994156}
   m_Layer: 0
   m_Name: Box065 (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34839,7 +35052,7 @@ GameObject:
   - component: {fileID: 1167254259}
   m_Layer: 0
   m_Name: Box085 (32)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34976,7 +35189,7 @@ GameObject:
   - component: {fileID: 1173372766}
   m_Layer: 0
   m_Name: Box065 (15)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35072,7 +35285,7 @@ GameObject:
   - component: {fileID: 1186406250}
   m_Layer: 0
   m_Name: Box085 (26)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35313,8 +35526,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -35452,7 +35665,7 @@ GameObject:
   - component: {fileID: 1213066697}
   m_Layer: 0
   m_Name: Box065 (5)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35684,6 +35897,36 @@ MonoBehaviour:
   dialogoLucian:
   - texto: "\xBFDonde estoy?"
   - texto: "\xBFAcaso esto es un sue\xF1o? "
+--- !u!1 &1229953249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229953250}
+  m_Layer: 0
+  m_Name: Point (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229953250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229953249}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 39.22, y: 3.83, z: -52.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1126103301}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1233864911
 GameObject:
   m_ObjectHideFlags: 0
@@ -35698,7 +35941,7 @@ GameObject:
   - component: {fileID: 1233864913}
   m_Layer: 0
   m_Name: Box085 (12)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35807,7 +36050,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249729118}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -35890,7 +36133,7 @@ GameObject:
   - component: {fileID: 1273564583}
   m_Layer: 0
   m_Name: Box085 (19)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36119,7 +36362,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74218
+  m_Name: pb_Mesh28204
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36291,7 +36534,7 @@ GameObject:
   - component: {fileID: 1344472579}
   m_Layer: 0
   m_Name: Box085 (6)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36387,7 +36630,7 @@ GameObject:
   - component: {fileID: 1401860351}
   m_Layer: 0
   m_Name: Box024 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36483,7 +36726,7 @@ GameObject:
   - component: {fileID: 1409123051}
   m_Layer: 0
   m_Name: Box050 (2)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36751,7 +36994,7 @@ GameObject:
   - component: {fileID: 1441485415}
   m_Layer: 0
   m_Name: Box085 (34)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36847,7 +37090,7 @@ GameObject:
   - component: {fileID: 1441911034}
   m_Layer: 0
   m_Name: Box085 (25)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36938,32 +37181,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1444797862}
-  - component: {fileID: 1444797861}
-  - component: {fileID: 1444797860}
-  - component: {fileID: 1444797859}
   - component: {fileID: 1444797858}
   m_Layer: 0
   m_Name: Spawn
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1444797858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444797857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730a1c2034d62e34f9e5dd5ee833fa70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 543450651927109077}
-  respawnPoint: {fileID: 280297621}
---- !u!65 &1444797859
+--- !u!65 &1444797858
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36976,55 +37202,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1444797860
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444797857}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1444797861
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444797857}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1444797862
 Transform:
   m_ObjectHideFlags: 0
@@ -37033,8 +37210,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444797857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99, y: -27, z: -67}
-  m_LocalScale: {x: 600, y: 5, z: 500}
+  m_LocalPosition: {x: -99, y: -20.4, z: -91.7}
+  m_LocalScale: {x: 627.046, y: 5, z: 365.68497}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -37053,7 +37230,7 @@ GameObject:
   - component: {fileID: 1449736732}
   m_Layer: 0
   m_Name: Box085 (7)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37149,7 +37326,7 @@ GameObject:
   - component: {fileID: 1497494129}
   m_Layer: 0
   m_Name: Box050 (6)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37245,7 +37422,7 @@ GameObject:
   - component: {fileID: 1518578181}
   m_Layer: 0
   m_Name: Box090 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37327,6 +37504,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518578179}
   m_Mesh: {fileID: 7739714054696750135, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &1519205996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519205998}
+  - component: {fileID: 1519205997}
+  m_Layer: 0
+  m_Name: Check Point (3)
+  m_TagString: checkpoint
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1519205997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519205996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1519205998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519205996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.96, y: 8.44, z: -81.95}
+  m_LocalScale: {x: 5.97828, y: 3.463, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529841979
 GameObject:
   m_ObjectHideFlags: 0
@@ -37418,7 +37639,7 @@ GameObject:
   - component: {fileID: 1546506049}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43850,7 +44071,7 @@ GameObject:
   - component: {fileID: 1587148886}
   m_Layer: 0
   m_Name: Box008 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43946,7 +44167,7 @@ GameObject:
   - component: {fileID: 1592693398}
   m_Layer: 0
   m_Name: Box085 (24)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44034,7 +44255,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74350
+  m_Name: pb_Mesh28336
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -44302,7 +44523,7 @@ GameObject:
   - component: {fileID: 1649166177}
   m_Layer: 0
   m_Name: Box085 (23)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44409,16 +44630,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655603885}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7090173, w: 0.7051912}
+  m_LocalRotation: {x: -0, y: -0, z: 0.75961167, w: 0.650377}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0561277, y: 2.2988, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1306388094}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.31}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 98.86}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -19, y: 102}
+  m_AnchoredPosition: {x: -16, y: 143}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1655603887
@@ -44492,7 +44713,7 @@ GameObject:
   - component: {fileID: 1698145843}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44779,7 +45000,7 @@ GameObject:
   - component: {fileID: 1807546169}
   m_Layer: 0
   m_Name: Box065 (14)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44875,7 +45096,7 @@ GameObject:
   - component: {fileID: 1811493817}
   m_Layer: 0
   m_Name: Box085 (8)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44971,7 +45192,7 @@ GameObject:
   - component: {fileID: 1813597256}
   m_Layer: 0
   m_Name: Box086 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45067,7 +45288,7 @@ GameObject:
   - component: {fileID: 1819456233}
   m_Layer: 0
   m_Name: Box065 (4)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45163,7 +45384,7 @@ GameObject:
   - component: {fileID: 1853969897}
   m_Layer: 0
   m_Name: Box065 (6)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45245,6 +45466,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853969895}
   m_Mesh: {fileID: 7404775158862943375, guid: 830b48b336b986e459b02eb16dc31a7a, type: 3}
+--- !u!1 &1856634459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856634461}
+  - component: {fileID: 1856634460}
+  m_Layer: 0
+  m_Name: Check Point (1)
+  m_TagString: checkpoint
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1856634460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856634459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1856634461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856634459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.45, y: -3.230738, z: -10.27}
+  m_LocalScale: {x: 6.940783, y: 2.2302105, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867656233
 GameObject:
   m_ObjectHideFlags: 0
@@ -45259,7 +45524,7 @@ GameObject:
   - component: {fileID: 1867656235}
   m_Layer: 0
   m_Name: Box085 (4)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45401,7 +45666,7 @@ GameObject:
   - component: {fileID: 1917121086}
   m_Layer: 0
   m_Name: Box008 1 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45497,7 +45762,7 @@ GameObject:
   - component: {fileID: 1919555082}
   m_Layer: 0
   m_Name: Box085 (33)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45593,7 +45858,7 @@ GameObject:
   - component: {fileID: 1930441722}
   m_Layer: 0
   m_Name: Box065 (12)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45822,7 +46087,7 @@ GameObject:
   - component: {fileID: 1989634889}
   m_Layer: 0
   m_Name: Box065 (10)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46052,7 +46317,7 @@ GameObject:
   - component: {fileID: 2026590411}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51464,7 +51729,7 @@ GameObject:
   - component: {fileID: 2051339121}
   m_Layer: 0
   m_Name: Box037 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51560,7 +51825,7 @@ GameObject:
   - component: {fileID: 2055900042}
   m_Layer: 0
   m_Name: Box085 (5)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51656,7 +51921,7 @@ GameObject:
   - component: {fileID: 2064166505}
   m_Layer: 0
   m_Name: Box085 (18)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51828,7 +52093,7 @@ GameObject:
   - component: {fileID: 2084488756}
   m_Layer: 0
   m_Name: Box077 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52006,7 +52271,7 @@ GameObject:
   - component: {fileID: 2106910233}
   m_Layer: 0
   m_Name: Box085 (17)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52177,7 +52442,7 @@ GameObject:
   - component: {fileID: 2129366239}
   m_Layer: 0
   m_Name: Box092 (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52273,7 +52538,7 @@ GameObject:
   - component: {fileID: 2135074985}
   m_Layer: 0
   m_Name: Box085 (29)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52503,7 +52768,7 @@ GameObject:
   - component: {fileID: 2140305040}
   m_Layer: 0
   m_Name: Box085 (11)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52754,7 +53019,7 @@ GameObject:
   - component: {fileID: 2145137530}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56421,7 +56686,7 @@ GameObject:
   - component: {fileID: 72903734204561572}
   m_Layer: 0
   m_Name: Box084
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56618,7 +56883,7 @@ GameObject:
   - component: {fileID: 459294525444245171}
   m_Layer: 0
   m_Name: Box009
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56693,7 +56958,7 @@ GameObject:
   - component: {fileID: 496588809493276086}
   m_Layer: 0
   m_Name: Box020
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56734,7 +56999,7 @@ GameObject:
   - component: {fileID: 509267719240684884}
   m_Layer: 0
   m_Name: Box057
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56785,7 +57050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147739101039}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 5.91, y: -7.006, z: 10.77}
+  m_LocalPosition: {x: 10.08, y: -7.052, z: 11.94}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4167280743018606596}
@@ -56797,6 +57062,8 @@ Transform:
   - {fileID: 65201556}
   - {fileID: 639981974}
   - {fileID: 33978167}
+  - {fileID: 1072999709}
+  - {fileID: 877252620}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -57282,7 +57549,7 @@ GameObject:
   - component: {fileID: 760662084528727617}
   m_Layer: 0
   m_Name: Box006
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57426,6 +57693,7 @@ GameObject:
   - component: {fileID: 919132147739101041}
   - component: {fileID: 919132147739101043}
   - component: {fileID: 919132147739101044}
+  - component: {fileID: 919132147739101045}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -57445,7 +57713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efafdff10c454f54e89c79061f3c181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
   terceraPersona: {fileID: 963194231}
   inventory: {fileID: 899375492}
   slotHolder: {fileID: 228047947}
@@ -57461,7 +57728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b267ac301b9a514448b66f56633c30a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 5
+  playerSpeed: 6
   gravity: 14
   fallVeclocity: 0
   jumpForce: 6
@@ -57529,6 +57796,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce71cc2d2d7be334faf28d93cdc7d14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &919132147739101045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147739101039}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730a1c2034d62e34f9e5dd5ee833fa70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos1: {fileID: 606755806}
+  pos2: {fileID: 1229953250}
+  pos3: {fileID: 638452622}
+  player: {fileID: 543450651927109077}
 --- !u!1 &919132148756782017
 GameObject:
   m_ObjectHideFlags: 0
@@ -57540,7 +57823,7 @@ GameObject:
   - component: {fileID: 543450653032857979}
   m_Layer: 0
   m_Name: level_0
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57773,7 +58056,7 @@ GameObject:
   - component: {fileID: 1215484123877172299}
   m_Layer: 0
   m_Name: Box082
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57806,7 +58089,7 @@ GameObject:
   - component: {fileID: 1240275351158331405}
   m_Layer: 0
   m_Name: Box083
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57839,7 +58122,7 @@ GameObject:
   - component: {fileID: 1257470764077888767}
   m_Layer: 0
   m_Name: Box077
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57872,7 +58155,7 @@ GameObject:
   - component: {fileID: 1302955164395161314}
   m_Layer: 0
   m_Name: Box032
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57905,7 +58188,7 @@ GameObject:
   - component: {fileID: 1312710891204205214}
   m_Layer: 0
   m_Name: Box061
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58135,7 +58418,7 @@ GameObject:
   - component: {fileID: 1360980345711460915}
   m_Layer: 0
   m_Name: Box002
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58209,7 +58492,7 @@ GameObject:
   - component: {fileID: 1392604126992783236}
   m_Layer: 0
   m_Name: techo2
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58313,7 +58596,7 @@ GameObject:
   - component: {fileID: 1584040827577299884}
   m_Layer: 0
   m_Name: Box003
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58490,7 +58773,7 @@ GameObject:
   - component: {fileID: 1750519539483802083}
   m_Layer: 0
   m_Name: Box056
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58676,7 +58959,7 @@ GameObject:
   - component: {fileID: 1864093079058468627}
   m_Layer: 0
   m_Name: Box023
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59143,7 +59426,7 @@ GameObject:
   - component: {fileID: 2340534047478697447}
   m_Layer: 0
   m_Name: Box050
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59250,7 +59533,7 @@ GameObject:
   - component: {fileID: 2474780306819762381}
   m_Layer: 0
   m_Name: derecha
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59305,7 +59588,7 @@ GameObject:
   - component: {fileID: 2499313208898515910}
   m_Layer: 0
   m_Name: frente2
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59379,7 +59662,7 @@ GameObject:
   - component: {fileID: 2559300145810886815}
   m_Layer: 0
   m_Name: Box058
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59420,7 +59703,7 @@ GameObject:
   - component: {fileID: 2643710341521347152}
   m_Layer: 0
   m_Name: atras
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59535,7 +59818,7 @@ GameObject:
   - component: {fileID: 2718173970929845140}
   m_Layer: 0
   m_Name: Box033
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59568,7 +59851,7 @@ GameObject:
   - component: {fileID: 2743476565290623092}
   m_Layer: 0
   m_Name: Box030
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59743,7 +60026,7 @@ GameObject:
   - component: {fileID: 2888849921860948078}
   m_Layer: 0
   m_Name: Box013
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59897,7 +60180,7 @@ GameObject:
   - component: {fileID: 2991032152569209074}
   m_Layer: 0
   m_Name: Box091
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60088,7 +60371,7 @@ GameObject:
   - component: {fileID: 3301866558179503784}
   m_Layer: 0
   m_Name: Box008
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60138,7 +60421,7 @@ GameObject:
   - component: {fileID: 3336198060398765309}
   m_Layer: 0
   m_Name: frente1
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60202,7 +60485,7 @@ GameObject:
   - component: {fileID: 3353901480453919919}
   m_Layer: 0
   m_Name: Box062
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60291,7 +60574,7 @@ GameObject:
   - component: {fileID: 3387747432095084908}
   m_Layer: 0
   m_Name: Box037
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60386,7 +60669,7 @@ GameObject:
   - component: {fileID: 3462648202576179754}
   m_Layer: 0
   m_Name: Box068
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60460,7 +60743,7 @@ GameObject:
   - component: {fileID: 3515881345081474784}
   m_Layer: 0
   m_Name: Box024
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60603,7 +60886,7 @@ GameObject:
   - component: {fileID: 3711035973174019499}
   m_Layer: 0
   m_Name: Box036
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60658,7 +60941,7 @@ GameObject:
   - component: {fileID: 3770301312472626048}
   m_Layer: 0
   m_Name: Box019
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60781,7 +61064,7 @@ GameObject:
   - component: {fileID: 3822306267775114866}
   m_Layer: 0
   m_Name: Box022
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60828,7 +61111,7 @@ GameObject:
   - component: {fileID: 3920338821339769663}
   m_Layer: 0
   m_Name: Box065
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60926,7 +61209,7 @@ GameObject:
   - component: {fileID: 4016478054902039241}
   m_Layer: 0
   m_Name: Box060
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61000,7 +61283,7 @@ GameObject:
   - component: {fileID: 4055124554101402471}
   m_Layer: 0
   m_Name: Box043
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61074,7 +61357,7 @@ GameObject:
   - component: {fileID: 4093095262476741181}
   m_Layer: 0
   m_Name: Box086
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61107,7 +61390,7 @@ GameObject:
   - component: {fileID: 4138662605762991501}
   m_Layer: 0
   m_Name: techo1
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61241,7 +61524,7 @@ GameObject:
   - component: {fileID: 4327183742619724256}
   m_Layer: 0
   m_Name: Box044
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61408,7 +61691,7 @@ GameObject:
   - component: {fileID: 4429580290847583468}
   m_Layer: 0
   m_Name: Box027
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61565,7 +61848,7 @@ GameObject:
   - component: {fileID: 4698280391164390838}
   m_Layer: 0
   m_Name: Box029
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61790,7 +62073,7 @@ GameObject:
   - component: {fileID: 4997457148886831133}
   m_Layer: 0
   m_Name: Box021
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61950,7 +62233,7 @@ GameObject:
   - component: {fileID: 5290980053937568592}
   m_Layer: 0
   m_Name: Box059
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62099,7 +62382,7 @@ GameObject:
   - component: {fileID: 5451956611806304157}
   m_Layer: 0
   m_Name: Box080
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62132,7 +62415,7 @@ GameObject:
   - component: {fileID: 5548730985304926358}
   m_Layer: 0
   m_Name: Box055
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62539,7 +62822,7 @@ GameObject:
   - component: {fileID: 6155131841780352618}
   m_Layer: 0
   m_Name: Box007
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62658,7 +62941,7 @@ GameObject:
   - component: {fileID: 6455185413695328421}
   m_Layer: 0
   m_Name: Box066
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62910,7 +63193,7 @@ GameObject:
   - component: {fileID: 6656322390496006658}
   m_Layer: 0
   m_Name: izquierda
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62958,7 +63241,7 @@ GameObject:
   - component: {fileID: 6669032907784347878}
   m_Layer: 0
   m_Name: Box072
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63154,7 +63437,7 @@ GameObject:
   - component: {fileID: 6841511662994383727}
   m_Layer: 0
   m_Name: Box081
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63466,7 +63749,7 @@ GameObject:
   - component: {fileID: 7306472826993660771}
   m_Layer: 0
   m_Name: Box005
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63698,7 +63981,7 @@ GameObject:
   - component: {fileID: 7688384656875554767}
   m_Layer: 0
   m_Name: Box008 1
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63731,7 +64014,7 @@ GameObject:
   - component: {fileID: 7693660376089351925}
   m_Layer: 0
   m_Name: Box092
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63883,7 +64166,7 @@ GameObject:
   - component: {fileID: 7931744838567308295}
   m_Layer: 0
   m_Name: Box064
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63932,7 +64215,7 @@ GameObject:
   - component: {fileID: 7985479688593297137}
   m_Layer: 0
   m_Name: Box040
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63965,7 +64248,7 @@ GameObject:
   - component: {fileID: 7985555887055705299}
   m_Layer: 0
   m_Name: Box042
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64113,7 +64396,7 @@ GameObject:
   - component: {fileID: 8106251544251150349}
   m_Layer: 0
   m_Name: Box090
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64176,7 +64459,7 @@ GameObject:
   - component: {fileID: 8162658471292525792}
   m_Layer: 0
   m_Name: Box076
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64209,7 +64492,7 @@ GameObject:
   - component: {fileID: 8168692877976575455}
   m_Layer: 0
   m_Name: Box070
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64290,7 +64573,7 @@ GameObject:
   - component: {fileID: 8339135452120389092}
   m_Layer: 0
   m_Name: Box026
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64532,7 +64815,7 @@ GameObject:
   - component: {fileID: 8553588650010409361}
   m_Layer: 0
   m_Name: Box067
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64630,7 +64913,7 @@ GameObject:
   - component: {fileID: 8638958803400220712}
   m_Layer: 0
   m_Name: Box010
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65017,7 +65300,7 @@ GameObject:
   - component: {fileID: 9125750224910250244}
   m_Layer: 0
   m_Name: Box012
-  m_TagString: Untagged
+  m_TagString: Terreno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
