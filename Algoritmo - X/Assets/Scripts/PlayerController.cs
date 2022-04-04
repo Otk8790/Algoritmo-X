@@ -70,13 +70,14 @@ public class PlayerController : MonoBehaviour
     //Tiempo
     public float shotRate = 4.0f;
     private float shotRateTime = 0f;
+    public Transform puntoDeDisparo;
+    public float daño = 20f;
 
 
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
     //Variables animacion
     //public Animator playerAnimatorController;
-
 
 
     // Start is called before the first frame update
@@ -121,7 +122,7 @@ public class PlayerController : MonoBehaviour
     }
     public void movimiento()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || Dialogador1.enDialogo1)
             return;
         if (puedeMoverse)
         {
@@ -147,7 +148,7 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerSkills()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || Dialogador1.enDialogo1)
             return;
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
@@ -179,7 +180,7 @@ public class PlayerController : MonoBehaviour
 
     private void Ataque()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || Dialogador1.enDialogo1)
             return;
         if (Input.GetButtonDown("Fire1") && player.isGrounded && puedeAtacar)
         {
@@ -199,7 +200,7 @@ public class PlayerController : MonoBehaviour
 
     private void Disparo()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || Dialogador1.enDialogo1)
             return;
         if (Input.GetButtonDown("Fire2") && player.isGrounded && puedeAtacar)
         {
@@ -224,7 +225,7 @@ public class PlayerController : MonoBehaviour
 
     private void Escudo()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || Dialogador1.enDialogo1)
             return;
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
