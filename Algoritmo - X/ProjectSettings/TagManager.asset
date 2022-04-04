@@ -8,6 +8,8 @@ TagManager:
   - item
   - WeaponManager
   - Enemy
+  - Terreno
+  - checkpoint
   layers:
   - Default
   - TransparentFX

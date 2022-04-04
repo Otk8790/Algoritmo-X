@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
     }
     public void movimiento()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
             return;
         if (puedeMoverse)
         {
@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerSkills()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
             return;
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
@@ -180,10 +180,11 @@ public class PlayerController : MonoBehaviour
 
     private void Ataque()
     {
-        if(ControlDialogos.enDialogo)
-            return;
+        
         if (Input.GetButtonDown("Fire1") && player.isGrounded && puedeAtacar)
         {
+            if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+                return;
             if (Time.time>timeAtaque)
             {
                 playerAnimatorController.SetTrigger("Attack");
@@ -200,10 +201,10 @@ public class PlayerController : MonoBehaviour
 
     private void Disparo()
     {
-        if(ControlDialogos.enDialogo)
-            return;
         if (Input.GetButtonDown("Fire2") && player.isGrounded && puedeAtacar)
         {
+            if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+                return;
             if (Time.time> shotRateTime)
             {
                 playerAnimatorController.SetTrigger("Disparar");
@@ -225,7 +226,7 @@ public class PlayerController : MonoBehaviour
 
     private void Escudo()
     {
-        if(ControlDialogos.enDialogo)
+        if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
             return;
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
