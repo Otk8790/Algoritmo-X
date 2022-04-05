@@ -32,6 +32,12 @@ public class BullerController : MonoBehaviour
         {
             Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
             Destroy(gameObject);
+            other.gameObject.GetComponent<EnemyVida>().DamageEnemy(damage);
+        }
+        else if (other.gameObject.tag == "Drone")
+        {
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+            Destroy(gameObject);
             other.gameObject.GetComponent<EnemyVidaDron>().DamageEnemy(damage);
         }
     }

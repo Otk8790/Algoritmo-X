@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyVida : MonoBehaviour
 {
-    public int currentHealth = 5;
+    public int currentHealth;
     public ParticleSystem explosionParticle;
     /* public AudioSource Destruir;
     public GameObject SonidoDestruir; */

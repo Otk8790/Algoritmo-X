@@ -11,6 +11,7 @@ TagManager:
   - Terreno
   - checkpoint
   - Bala
+  - Drone
   layers:
   - Default
   - TransparentFX
