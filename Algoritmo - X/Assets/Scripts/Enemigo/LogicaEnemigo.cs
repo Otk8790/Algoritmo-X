@@ -7,14 +7,14 @@ public class LogicaEnemigo : MonoBehaviour {
     private NavMeshAgent agente;
     private Vida vida;
     private Animator animator;
-    private Collider collider;
+    private Collider collide;
     private Vida vidaJugador;
     private LogicaJugador logicaJugador;
     public bool Vida0 = false;
     public bool estaAtacando = false;
     public float speed = 1.0f;
     public float angularSpeed = 120;
-    public float daño = 25;
+    public float daño = 1;
    
     public bool mirando;
 
@@ -37,13 +37,13 @@ public class LogicaEnemigo : MonoBehaviour {
         agente = GetComponent<NavMeshAgent>();
         vida = GetComponent<Vida>();
         animator = GetComponent<Animator>();
-        collider = GetComponent<Collider>();
+        collide = GetComponent<Collider>();
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        RevisarVida();
+        //RevisarVida();
         Perseguir();
         RevisarAtaque();
         EstaDefrenteAlJugador();
@@ -54,7 +54,7 @@ public class LogicaEnemigo : MonoBehaviour {
         Vector3 adelante = transform.forward;
         Vector3 targetJugador = (GameObject.Find("Player").transform.position - transform.position).normalized;
 
-        if(Vector3.Dot(adelante,targetJugador)< 0.6f)
+        if(Vector3.Dot(adelante,targetJugador)> 5f)
         {
             mirando = false;
         }
@@ -64,19 +64,19 @@ public class LogicaEnemigo : MonoBehaviour {
         }
     }
 
-    void RevisarVida()
+    /*void RevisarVida()
     {
         if (Vida0) return;
         if(vida.valor <= 0)
         {
             Vida0 = true;
             agente.isStopped = true;
-            collider.enabled = false;
+            collide.enabled = false;
             animator.CrossFadeInFixedTime("Vida0", 0.1f);
             Destroy(gameObject, 3f);
         }
 
-    }
+    }*/
 
     void Perseguir()
     {
@@ -113,6 +113,15 @@ public class LogicaEnemigo : MonoBehaviour {
         estaAtacando = false;
         agente.speed = speed;
         agente.angularSpeed = angularSpeed;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Bala")
+        {
+            
+            Destroy(gameObject);
+        }
     }
 
 }

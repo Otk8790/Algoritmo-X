@@ -216,7 +216,9 @@ public class PlayerController : MonoBehaviour
                 Destroy(newBullet, 2);
             }
         }
+
     }
+
     public void TerminaDisparo()
     {
         puedeMoverse = true;
@@ -255,7 +257,7 @@ public class PlayerController : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
@@ -265,10 +267,10 @@ public class PlayerController : MonoBehaviour
             vidaActual -= 1;
             /* StartCoroutine(cameraShake.Shake()); */
             /* SacudirCamara(.5f); */
-            valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
+            /*valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
             mascaradeDaño.color = new Color(1, 1, 1, valorAlfa);
             //vida.text = vidaActual.ToString();
             barraverde.fillAmount = (float)vidaActual / vidaMax;
         } 
-    }
+    }*/ 
 }
