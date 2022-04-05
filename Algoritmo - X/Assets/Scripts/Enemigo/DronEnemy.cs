@@ -5,10 +5,11 @@ using UnityEngine;
 public class DronEnemy : MonoBehaviour
 {  
     [Header("DISPARO ENEMIGO")]
-    public GameObject disparo;
+    public GameObject bullet;
     public Transform disparoSpawn;
-    public float delay;
-    public float velocidadDisparo;
+    public float EnemRate = 4.0f;
+    private float EnemRateTime = 0f;
+    public float shotForce = 1500f;
 
     [Header("SEGUIR ENEMIGO")]
     public float rangoAlerta;
@@ -19,7 +20,7 @@ public class DronEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("fuego", delay, velocidadDisparo);
+
     }
 
     // Update is called once per frame
@@ -32,19 +33,25 @@ public class DronEnemy : MonoBehaviour
             transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
             //transform.LookAt(new Vector3(player.rotation.x, transform.rotation.y, player.rotation.z));
+            fuego();
         }
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.cyan;
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, rangoAlerta);
     }
 
     void fuego()
     {
-        GameObject newBullet;
-        newBullet = Instantiate(disparo, disparoSpawn.position, disparoSpawn.rotation);
-        Destroy(newBullet, 1);
+        if (Time.time > EnemRateTime)
+        {
+            GameObject newBullet;
+            newBullet = Instantiate(bullet, disparoSpawn.position, disparoSpawn.rotation);
+            newBullet.GetComponent<Rigidbody>().AddForce(disparoSpawn.forward * shotForce);
+            Destroy(newBullet, 1);
+            EnemRateTime = Time.time + EnemRate;
+        }
     }
 }
