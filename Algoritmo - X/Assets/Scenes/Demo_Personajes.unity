@@ -6079,7 +6079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.2999878, y: -5}
+  m_AnchoredPosition: {x: -1.3000488, y: -5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245011258
@@ -13895,7 +13895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34
+      value: 32.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13903,7 +13903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -44.07
+      value: -21.41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22868,9 +22868,6 @@ MonoBehaviour:
   dialogoLucian:
   - texto: "\xBFDonde estoy?"
   - texto: "\xBFAcaso esto es un sue\xF1o? "
-  - texto: "\xBFAcaso esto es un sue\xF1o? "
-  - texto: "\xBFAcaso esto es un sue\xF1o? "
-  - texto: "\xBFAcaso esto es un sue\xF1o? "
 --- !u!1 &1233864911
 GameObject:
   m_ObjectHideFlags: 0
@@ -23673,13 +23670,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a6512671d0cc04ab0fa141a880c16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangoAlerta: 6
-  capaDeHope:
-    serializedVersion: 2
-    m_Bits: 128
-  player: {fileID: 2052368453}
-  speed: 2
-  playerAnimatorController: {fileID: 0}
+  disparo: {fileID: 8688565013032900443, guid: 17c0f1afc37430248ad9a042bed127d5, type: 3}
+  disparoSpawn: {fileID: 1558504018}
+  delay: 0.5
+  velocidadDisparo: 1.5
+--- !u!4 &1400802107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
+  m_PrefabInstance: {fileID: 641722763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!135 &1400802108
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24941,6 +24940,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1558504017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558504018}
+  m_Layer: 7
+  m_Name: Disparo Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558504018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558504017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.013, y: -0.318, z: 0.508}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1400802107}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1584447441
 PrefabInstance:
   m_ObjectHideFlags: 0

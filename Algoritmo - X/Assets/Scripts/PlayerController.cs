@@ -167,7 +167,6 @@ public class PlayerController : MonoBehaviour
 
     private void Ataque()
     {
-        
         if (Input.GetButtonDown("Fire1") && player.isGrounded && puedeAtacar)
         {
             if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
