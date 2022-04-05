@@ -90,12 +90,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8347469690624724449}
-  - component: {fileID: 7120870866818199511}
   - component: {fileID: -2780468435987246186}
-  - component: {fileID: 5264691878408372371}
+  - component: {fileID: -8164821238283217771}
+  - component: {fileID: -4438584254993040617}
   m_Layer: 0
   m_Name: Cohete
-  m_TagString: Untagged
+  m_TagString: Bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,19 +115,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7120870866818199511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8688565013032900443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e996b17ad85a5c4d9d5fd7876dc8a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
 --- !u!54 &-2780468435987246186
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,7 +131,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5264691878408372371
+--- !u!114 &-8164821238283217771
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,6 +140,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 8688565013032900443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb48b27b79da63489b6aa82f7e6924d, type: 3}
+  m_Script: {fileID: 11500000, guid: 853d5df9513149945abdeff881444869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4438584254993040617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8688565013032900443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e996b17ad85a5c4d9d5fd7876dc8a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40

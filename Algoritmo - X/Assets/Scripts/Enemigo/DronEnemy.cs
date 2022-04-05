@@ -22,6 +22,8 @@ public class DronEnemy : MonoBehaviour
 
     void fuego()
     {
-        Instantiate(disparo, disparoSpawn.position, disparoSpawn.rotation);
+        GameObject newBullet;
+        newBullet = Instantiate(disparo, disparoSpawn.position, disparoSpawn.rotation);
+        Destroy(newBullet, 1);
     }
 }
