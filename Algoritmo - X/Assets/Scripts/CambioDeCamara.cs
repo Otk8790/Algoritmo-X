@@ -26,11 +26,11 @@ public class CambioDeCamara : MonoBehaviour
         }
         if (vista == true)
         {
-            transform.position = Vector3.Lerp(transform.position, FirstPerson.position, 6 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, FirstPerson.position, 8 * Time.deltaTime);
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, ThirtPerson.position, 6 * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, ThirtPerson.position, 8 * Time.deltaTime);
         }
     }
 }

@@ -100,8 +100,6 @@ public class PlayerController : MonoBehaviour
 
         playerAnimatorController.SetFloat("PlayerWalkVelocity", playerInput.magnitude * playerSpeed);
 
-        camDirection();
-
         movePlayer = playerInput.x * camRight + playerInput.z * camForward;
 
         movePlayer = movePlayer * playerSpeed;
@@ -133,17 +131,6 @@ public class PlayerController : MonoBehaviour
             playerInput = new Vector3(horizontalMove, 0, verticalMove);
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
         }
-    }
-    void camDirection()
-    {
-        camForward = mainCamera.transform.forward;
-        camRight = mainCamera.transform.right;
-
-        camForward.y = 0;
-        camRight.y = 0;
-
-        camForward = camForward.normalized;
-        camRight = camRight.normalized;
     }
 
     public void PlayerSkills()
