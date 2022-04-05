@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7141972379296962501}
   - component: {fileID: 328090273714995059}
   m_Layer: 8
-  m_Name: Polvo
+  m_Name: BalaPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,3 +237,4 @@ MonoBehaviour:
   lifeTime: 5
   theRB: {fileID: 6246192749039536991}
   damage: 1
+  explosionParticle: {fileID: 625621707174889904, guid: ef43e5aef41c142fb85a7658a397dc75, type: 3}

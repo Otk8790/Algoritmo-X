@@ -79,8 +79,8 @@ public class PlayerController : MonoBehaviour
     public AudioSource DisparoSound;
     public GameObject SonidoDisparo;
 
-    public AudioSource SaltoSound;
-    public GameObject SonidoSalto;
+    /* public AudioSource SaltoSound;
+    public GameObject SonidoSalto; */
 
 
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
@@ -165,10 +165,11 @@ public class PlayerController : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
-            Instantiate(SonidoSalto);
+            
+            /* Instantiate(SonidoSalto);
             GameObject sonidoSalto;
             sonidoSalto = Instantiate(SonidoSalto);
-            Destroy(sonidoSalto, 2);
+            Destroy(sonidoSalto, 2); */
 
             polvoPies.Stop();
             fallVeclocity = jumpForce;

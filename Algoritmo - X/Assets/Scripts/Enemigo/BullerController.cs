@@ -6,8 +6,8 @@ public class BullerController : MonoBehaviour
 {
     public float moveSpeed, lifeTime;
     public Rigidbody theRB;
-
     public int damage;
+    public ParticleSystem explosionParticle;
     void Start()
     {
         
@@ -30,6 +30,7 @@ public class BullerController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
             Destroy(gameObject);
             other.gameObject.GetComponent<EnemyVidaDron>().DamageEnemy(damage);
         }

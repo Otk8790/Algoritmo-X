@@ -20971,7 +20971,6 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   - component: {fileID: 963194231}
-  - component: {fileID: 963194232}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -21136,21 +21135,6 @@ MonoBehaviour:
   offset: {x: 5, y: 5, z: 5}
   lerpValue: 0.2
   sensibilidad: 3
---- !u!114 &963194232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5e58c0eee8cc84693477490708fec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rango: 0
-  camara: {fileID: 963194225}
-  IndicadorCentral: {fileID: 1878162919}
 --- !u!1 &978381415
 GameObject:
   m_ObjectHideFlags: 0
@@ -30460,8 +30444,6 @@ MonoBehaviour:
   "da\xF1o": 20
   DisparoSound: {fileID: 2208453675073046764, guid: 74a0d950777cd974faac125b6a7360bc, type: 3}
   SonidoDisparo: {fileID: 3780838306625357030, guid: 74a0d950777cd974faac125b6a7360bc, type: 3}
-  SaltoSound: {fileID: 2208453675073046764, guid: baab7784878a92f4ba393f6de1aeae0d, type: 3}
-  SonidoSalto: {fileID: 3780838306625357030, guid: baab7784878a92f4ba393f6de1aeae0d, type: 3}
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
