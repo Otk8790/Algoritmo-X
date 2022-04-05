@@ -74,6 +74,14 @@ public class PlayerController : MonoBehaviour
     public Transform puntoDeDisparo;
     public float daño = 20f;
 
+    [Header("SONIDO")]
+
+    public AudioSource DisparoSound;
+    public GameObject SonidoDisparo;
+
+    public AudioSource SaltoSound;
+    public GameObject SonidoSalto;
+
 
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
 
@@ -157,6 +165,7 @@ public class PlayerController : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
             //Instantiate(caida);
+            Instantiate(SonidoSalto);
             polvoPies.Stop();
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
@@ -211,7 +220,7 @@ public class PlayerController : MonoBehaviour
             if (Time.time > shotRateTime)
             {
                 playerAnimatorController.SetTrigger("Disparar");
-
+                Instantiate(SonidoDisparo);
                 GameObject newBullet;
                 newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
                 newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);

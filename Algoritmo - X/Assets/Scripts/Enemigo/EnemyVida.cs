@@ -6,6 +6,8 @@ public class EnemyVida : MonoBehaviour
 {
     public int currentHealth = 5;
     public ParticleSystem explosionParticle;
+    /* public AudioSource Destruir;
+    public GameObject SonidoDestruir; */
     void Start()
     {
         
@@ -19,7 +21,9 @@ public class EnemyVida : MonoBehaviour
 
     public void DamageEnemy(int damageAmount)
     {
+        
         currentHealth -= damageAmount;
+        /* Instantiate(SonidoDestruir); */
 
         if(currentHealth <= 0)
         {

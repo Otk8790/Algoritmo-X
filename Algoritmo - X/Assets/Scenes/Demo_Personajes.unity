@@ -30336,6 +30336,10 @@ MonoBehaviour:
   shotRate: 1.8
   puntoDeDisparo: {fileID: 639981974}
   "da\xF1o": 20
+  DisparoSound: {fileID: 2208453675073046764, guid: 74a0d950777cd974faac125b6a7360bc, type: 3}
+  SonidoDisparo: {fileID: 3780838306625357030, guid: 74a0d950777cd974faac125b6a7360bc, type: 3}
+  SaltoSound: {fileID: 2208453675073046764, guid: baab7784878a92f4ba393f6de1aeae0d, type: 3}
+  SonidoSalto: {fileID: 3780838306625357030, guid: baab7784878a92f4ba393f6de1aeae0d, type: 3}
 --- !u!143 &919132147739101042
 CharacterController:
   m_ObjectHideFlags: 0
