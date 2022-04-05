@@ -8,9 +8,11 @@ public class EnemyVida : MonoBehaviour
     public ParticleSystem explosionParticle;
     /* public AudioSource Destruir;
     public GameObject SonidoDestruir; */
+
+    private Animator anim;
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,8 +29,13 @@ public class EnemyVida : MonoBehaviour
 
         if(currentHealth <= 0)
         {
+            muerto();
             Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
-            Destroy(gameObject);
+            Destroy(gameObject,2f);
         }
+    }
+     public void muerto()
+    {
+        anim.SetTrigger("muerto");
     }
 }

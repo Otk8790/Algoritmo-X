@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class LogicaJugador : MonoBehaviour {
     public Vida vida;
     public bool Vida0 = false;
-    [SerializeField] private Animator animadorPerder;
+    private Animator anim;
 
 	// Use this for initialization
 	void Start () {
         vida = GetComponent<Vida>();
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -24,7 +25,8 @@ public class LogicaJugador : MonoBehaviour {
         if(vida.valor <= 0)
         {
             Vida0 = true;
-            Invoke("ReiniciarJuego", 2f);
+            anim.SetTrigger("morir");
+            Invoke("ReiniciarJuego", 5f);
         }
     }
 
