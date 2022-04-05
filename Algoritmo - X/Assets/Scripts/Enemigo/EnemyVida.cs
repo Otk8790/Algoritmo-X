@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyVida : MonoBehaviour
 {
     public int currentHealth = 5;
+    public ParticleSystem explosionParticle;
     void Start()
     {
         
@@ -22,6 +23,7 @@ public class EnemyVida : MonoBehaviour
 
         if(currentHealth <= 0)
         {
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
             Destroy(gameObject);
         }
     }
