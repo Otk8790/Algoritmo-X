@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 4720822644948322915}
   - component: {fileID: 6246192749039536991}
   - component: {fileID: 7141972379296962501}
-  - component: {fileID: -5745629181289766852}
-  m_Layer: 0
+  - component: {fileID: 328090273714995059}
+  m_Layer: 8
   m_Name: Polvo
-  m_TagString: Bala
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &-5745629181289766852
+--- !u!114 &328090273714995059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,6 +230,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7232905125431917745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 853d5df9513149945abdeff881444869, type: 3}
+  m_Script: {fileID: 11500000, guid: 25b02145a250c68498154bad63fa51f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 50
+  lifeTime: 5
+  theRB: {fileID: 6246192749039536991}
+  damage: 1

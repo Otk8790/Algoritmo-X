@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     //MovimientoPersonaje
     private float horizontalMove;
     private float verticalMove;
@@ -80,7 +81,10 @@ public class PlayerController : MonoBehaviour
     //public Animator playerAnimatorController;
 
 
-    // Start is called before the first frame update
+    void awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         puedeAtacar = true;

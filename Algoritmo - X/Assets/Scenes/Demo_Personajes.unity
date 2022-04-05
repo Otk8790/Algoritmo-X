@@ -109,7 +109,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.6
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -5735,6 +5735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
 --- !u!1 &204703163
@@ -6608,6 +6612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b9df8753220794c4dac6f90abe98d8cc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9df8753220794c4dac6f90abe98d8cc, type: 3}
 --- !u!1 &334908062
@@ -6941,6 +6949,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d696e031838d10b4b80b044b17df264b, type: 3}
       propertyPath: m_Name
       value: OBSTACULO5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d696e031838d10b4b80b044b17df264b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d696e031838d10b4b80b044b17df264b, type: 3}
@@ -7579,6 +7591,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b9df8753220794c4dac6f90abe98d8cc, type: 3}
       propertyPath: m_Name
       value: obstaculo4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b9df8753220794c4dac6f90abe98d8cc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9df8753220794c4dac6f90abe98d8cc, type: 3}
@@ -12484,6 +12500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
 --- !u!1 &500554655
@@ -12770,7 +12790,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967176
   m_IsActive: 1
 --- !u!114 &536657721
 MonoBehaviour:
@@ -13245,6 +13265,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
       propertyPath: m_Name
       value: obstaculo1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
@@ -13754,6 +13778,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 408275251c56a9f43a3a73241390b75c, type: 3}
   m_PrefabInstance: {fileID: 1542767363}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &636085370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636085369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89faae3ae65df146bf72b08b742a1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 5
 --- !u!95 &636085371
 Animator:
   serializedVersion: 3
@@ -13827,19 +13864,6 @@ MonoBehaviour:
   angularSpeed: 120
   "da\xF1o": 1
   mirando: 0
---- !u!114 &636085375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636085369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f6006102b5e544eae745fe1c927e22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  valor: 5
 --- !u!1 &639981973
 GameObject:
   m_ObjectHideFlags: 0
@@ -13944,6 +13968,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
@@ -20741,6 +20769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d60c3c5919498354282bd6c5e6c0110d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60c3c5919498354282bd6c5e6c0110d, type: 3}
 --- !u!1 &945926559
@@ -21905,6 +21937,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
       propertyPath: m_Name
       value: obstaculo2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
@@ -23159,6 +23195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
 --- !u!1 &1306388093
@@ -23372,6 +23412,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
       propertyPath: m_Name
       value: obstaculo1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
@@ -23634,6 +23678,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
       propertyPath: m_Name
       value: obstaculo1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
@@ -24543,6 +24591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
 --- !u!1 &1529841979
@@ -24691,6 +24743,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 408275251c56a9f43a3a73241390b75c, type: 3}
       propertyPath: m_Name
       value: Enemy02
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 408275251c56a9f43a3a73241390b75c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 408275251c56a9f43a3a73241390b75c, type: 3}
       propertyPath: m_TagString
@@ -24871,10 +24927,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552713174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f6006102b5e544eae745fe1c927e22, type: 3}
+  m_Script: {fileID: 11500000, guid: f89faae3ae65df146bf72b08b742a1f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valor: 5
+  currentHealth: 5
 --- !u!195 &1552713178
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -24885,10 +24941,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1
-  m_Acceleration: 2
+  m_Speed: 3.5
+  m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 100
+  m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -25026,6 +25082,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d696e031838d10b4b80b044b17df264b, type: 3}
       propertyPath: m_Name
       value: OBSTACULO5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d696e031838d10b4b80b044b17df264b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d696e031838d10b4b80b044b17df264b, type: 3}
@@ -25426,6 +25486,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
       propertyPath: m_Name
       value: obstaculo1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
@@ -25848,6 +25912,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
       propertyPath: m_Name
       value: obstaculo2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5c38b373ed7c154cb1027730973fd71, type: 3}
@@ -27527,7 +27595,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967176
   m_IsActive: 1
 --- !u!114 &2060007296
 MonoBehaviour:
