@@ -31,7 +31,7 @@ public class BullerController : MonoBehaviour
         if(other.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
-            other.gameObject.GetComponent<EnemyVida>().DamageEnemy(damage);
+            other.gameObject.GetComponent<EnemyVidaDron>().DamageEnemy(damage);
         }
     }
 }

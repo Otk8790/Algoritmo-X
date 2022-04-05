@@ -166,6 +166,10 @@ public class PlayerController : MonoBehaviour
         {
             //Instantiate(caida);
             Instantiate(SonidoSalto);
+            GameObject sonidoSalto;
+            sonidoSalto = Instantiate(SonidoSalto);
+            Destroy(sonidoSalto, 2);
+
             polvoPies.Stop();
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
@@ -220,12 +224,17 @@ public class PlayerController : MonoBehaviour
             if (Time.time > shotRateTime)
             {
                 playerAnimatorController.SetTrigger("Disparar");
-                Instantiate(SonidoDisparo);
                 GameObject newBullet;
                 newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
                 newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
+
+                
                 shotRateTime = Time.time + shotRate;
                 Destroy(newBullet, 2);
+
+                GameObject sonidoDisparo;
+                sonidoDisparo = Instantiate(SonidoDisparo);
+                Destroy(sonidoDisparo, 2);
             }
         }
 
