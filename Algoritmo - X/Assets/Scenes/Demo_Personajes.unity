@@ -23658,6 +23658,12 @@ MonoBehaviour:
   disparoSpawn: {fileID: 1558504018}
   delay: 0.5
   velocidadDisparo: 1.5
+  rangoAlerta: 6
+  capaDeHope:
+    serializedVersion: 2
+    m_Bits: 128
+  player: {fileID: 33978167}
+  speed: 1
 --- !u!4 &1400802107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
