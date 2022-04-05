@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         puedeAtacar = true;
         activarEscudo = true;
         puedeMoverse = true;
-        
+
         player = GetComponent<CharacterController>();
         playerAnimatorController = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
@@ -99,6 +99,8 @@ public class PlayerController : MonoBehaviour
         movimiento();
 
         playerAnimatorController.SetFloat("PlayerWalkVelocity", playerInput.magnitude * playerSpeed);
+
+        camDirection();
 
         movePlayer = playerInput.x * camRight + playerInput.z * camForward;
 
@@ -120,7 +122,7 @@ public class PlayerController : MonoBehaviour
     }
     public void movimiento()
     {
-        if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+        if (ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
             return;
         if (puedeMoverse)
         {
@@ -132,10 +134,21 @@ public class PlayerController : MonoBehaviour
             playerInput = Vector3.ClampMagnitude(playerInput, 1);
         }
     }
+    void camDirection()
+    {
+        camForward = mainCamera.transform.forward;
+        camRight = mainCamera.transform.right;
+
+        camForward.y = 0;
+        camRight.y = 0;
+
+        camForward = camForward.normalized;
+        camRight = camRight.normalized;
+    }
 
     public void PlayerSkills()
     {
-        if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+        if (ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
             return;
         if (player.isGrounded && Input.GetButtonDown("Jump") && shieldsActive == false)
         {
@@ -144,7 +157,7 @@ public class PlayerController : MonoBehaviour
             fallVeclocity = jumpForce;
             movePlayer.y = fallVeclocity;
             playerAnimatorController.SetTrigger("PlayerJump");
-            
+
         }
     }
 
@@ -169,9 +182,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && player.isGrounded && puedeAtacar)
         {
-            if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+            if (ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
                 return;
-            if (Time.time>timeAtaque)
+            if (Time.time > timeAtaque)
             {
                 playerAnimatorController.SetTrigger("Attack");
                 timeAtaque = Time.time + tiempoDeAtaque;
@@ -189,9 +202,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire2") && player.isGrounded && puedeAtacar)
         {
-            if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+            if (ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
                 return;
-            if (Time.time> shotRateTime)
+            if (Time.time > shotRateTime)
             {
                 playerAnimatorController.SetTrigger("Disparar");
 
@@ -214,11 +227,11 @@ public class PlayerController : MonoBehaviour
 
     private void Escudo()
     {
-        if(ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
+        if (ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
             return;
         if (Input.GetKeyDown(KeyCode.Z) && player.isGrounded)
         {
-            if (activarEscudo && Time.time>timeEscudo)
+            if (activarEscudo && Time.time > timeEscudo)
             {
                 shieldsActive = true;
                 _shieldGameObject.SetActive(true);
@@ -241,7 +254,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnAnimatorMove()
     {
-        
+
     }
     /*void OnTriggerEnter(Collider other)
     {
@@ -252,11 +265,11 @@ public class PlayerController : MonoBehaviour
             // reducir la vida
             vidaActual -= 1;
             /* StartCoroutine(cameraShake.Shake()); */
-            /* SacudirCamara(.5f); */
-            /*valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
-            mascaradeDaño.color = new Color(1, 1, 1, valorAlfa);
-            //vida.text = vidaActual.ToString();
-            barraverde.fillAmount = (float)vidaActual / vidaMax;
-        } 
-    }*/ 
+    /* SacudirCamara(.5f); */
+    /*valorAlfa = 1 / (float)vidaMax * (vidaMax - vidaActual);
+    mascaradeDaño.color = new Color(1, 1, 1, valorAlfa);
+    //vida.text = vidaActual.ToString();
+    barraverde.fillAmount = (float)vidaActual / vidaMax;
+} 
+}*/
 }
