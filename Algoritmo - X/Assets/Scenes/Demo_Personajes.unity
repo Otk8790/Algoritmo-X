@@ -14090,6 +14090,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
 --- !u!1 &652162950
@@ -24063,6 +24067,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.35270852
   m_Center: {x: -0.05999999, y: 0.0051862667, z: 0.11960255}
+--- !u!114 &1400802109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400802103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89faae3ae65df146bf72b08b742a1f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 3
+  explosionParticle: {fileID: 2088871590894813759, guid: 745208c9d6e104225bd99e1ab894e3bb, type: 3}
 --- !u!1 &1409123049
 GameObject:
   m_ObjectHideFlags: 0
