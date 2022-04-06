@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6094555731113255924}
   - component: {fileID: 9114299069151242359}
   - component: {fileID: 4095720859495369933}
-  - component: {fileID: -2849964505644868046}
   - component: {fileID: 7562019066634262718}
   m_Layer: 0
   m_Name: BalaDron
@@ -113,19 +112,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-2849964505644868046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5734430694629442081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e996b17ad85a5c4d9d5fd7876dc8a8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
 --- !u!65 &7562019066634262718
 BoxCollider:
   m_ObjectHideFlags: 0

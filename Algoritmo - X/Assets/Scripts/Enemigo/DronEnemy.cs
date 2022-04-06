@@ -14,7 +14,7 @@ public class DronEnemy : MonoBehaviour
     [Header("SEGUIR ENEMIGO")]
     public float rangoAlerta;
     public LayerMask capaDeHope;
-    private bool estarAlerta;
+    public bool estarAlerta;
     public Transform player;
     public float speed;
     // Start is called before the first frame update
@@ -24,15 +24,13 @@ public class DronEnemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         estarAlerta = Physics.CheckSphere(transform.position, rangoAlerta, capaDeHope);
         if (estarAlerta == true)
         {
-            //transform.LookAt(player)
             transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
-            //transform.LookAt(new Vector3(player.rotation.x, transform.rotation.y, player.rotation.z));
             fuego();
         }
     }
@@ -43,7 +41,7 @@ public class DronEnemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, rangoAlerta);
     }
 
-    void fuego()
+    public void fuego()
     {
         if (Time.time > EnemRateTime)
         {
