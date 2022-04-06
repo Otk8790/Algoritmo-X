@@ -87,8 +87,12 @@ public class PlayerController : MonoBehaviour
     public AudioSource DisparoSound;
     public GameObject SonidoDisparo;
 
-    /* public AudioSource SaltoSound;
-    public GameObject SonidoSalto; */
+    public AudioSource SaltoSound;
+    public GameObject SonidoSalto;
+    public AudioSource MorirSound;
+    public GameObject SonidoMorir;
+    public AudioSource GolpeSound;
+    public GameObject SonidoGolpe;
 
 
     /* private ParticleSystem.EmissionModule emisionPolvoPies; */
@@ -180,10 +184,10 @@ public class PlayerController : MonoBehaviour
         {
             //Instantiate(caida);
             
-            /* Instantiate(SonidoSalto);
+            Instantiate(SonidoSalto);
             GameObject sonidoSalto;
             sonidoSalto = Instantiate(SonidoSalto);
-            Destroy(sonidoSalto, 2); */
+            Destroy(sonidoSalto, 2);
 
             polvoPies.Stop();
             fallVeclocity = jumpForce;
@@ -293,6 +297,11 @@ public class PlayerController : MonoBehaviour
     {
         vida -= 20;
         setVidaPor();
+
+        Instantiate(SonidoGolpe);
+        GameObject sonidoGolpe;
+        sonidoGolpe = Instantiate(SonidoGolpe);
+        Destroy(sonidoGolpe, 2);
     }
 
     public void setVidaPor()
@@ -312,7 +321,11 @@ public class PlayerController : MonoBehaviour
 
             if(vida <= 0){
                 playerAnimatorController.SetTrigger("morir");
-                dronEnemy.disparoMorir = false;
+                Instantiate(SonidoMorir);
+                GameObject sonidoMorir;
+                sonidoMorir = Instantiate(SonidoMorir);
+                Destroy(sonidoMorir, 2);
+
                 Debug.Log("Game Over");
             }       
         }
