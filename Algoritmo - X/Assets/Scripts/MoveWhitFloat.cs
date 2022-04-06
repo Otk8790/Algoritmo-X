@@ -25,7 +25,7 @@ public class MoveWhitFloat : MonoBehaviour
         {
             RaycastHit hit;
 
-            if (Physics.SphereCast(transform.position, player.height / 45f, -transform.up, out hit))
+            if (Physics.SphereCast(transform.position, player.height / 4.2f, -transform.up, out hit))
             {
                 GameObject groundedIn = hit.collider.gameObject;
                 groundName = groundedIn.name;
@@ -52,7 +52,7 @@ public class MoveWhitFloat : MonoBehaviour
     {
         player = this.GetComponent<CharacterController>();
 
-        Gizmos.DrawWireSphere(transform.position, player.height / 45f);
+        Gizmos.DrawWireSphere(transform.position, player.height / 4.2f);
 
     }
 }
