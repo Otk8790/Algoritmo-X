@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveWhitFloat : MonoBehaviour
 {
-    CharacterController player;
+    CharacterController Player;
     Vector3 groundPosition;
     Vector3 lastGroundPosition;
     string groundName;
@@ -14,18 +14,18 @@ public class MoveWhitFloat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = this.GetComponent<CharacterController>();
+        Player = this.GetComponent<CharacterController>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.isGrounded)
+        if (Player.isGrounded)
         {
             RaycastHit hit;
 
-            if (Physics.SphereCast(transform.position, player.height / 4.2f, -transform.up, out hit))
+            if (Physics.SphereCast(transform.position, Player.height / 40f, -transform.up, out hit))
             {
                 GameObject groundedIn = hit.collider.gameObject;
                 groundName = groundedIn.name;
@@ -41,7 +41,7 @@ public class MoveWhitFloat : MonoBehaviour
 
             }
         }
-        else if (!player.isGrounded)
+        else if (!Player.isGrounded)
         {
             lastGroundName = null;
             lastGroundPosition = Vector3.zero;
@@ -50,9 +50,9 @@ public class MoveWhitFloat : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        player = this.GetComponent<CharacterController>();
+        Player = this.GetComponent<CharacterController>();
 
-        Gizmos.DrawWireSphere(transform.position, player.height / 4.2f);
+        Gizmos.DrawWireSphere(transform.position, Player.height / 40f);
 
     }
 }
