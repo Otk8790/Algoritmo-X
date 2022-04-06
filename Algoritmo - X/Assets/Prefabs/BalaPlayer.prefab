@@ -237,4 +237,4 @@ MonoBehaviour:
   lifeTime: 5
   theRB: {fileID: 6246192749039536991}
   damage: 1
-  explosionParticle: {fileID: 625621707174889904, guid: ef43e5aef41c142fb85a7658a397dc75, type: 3}
+  explosionParticle: {fileID: 198357973136645638, guid: 67a684e320da6e7439421a07e3fa265c, type: 3}
