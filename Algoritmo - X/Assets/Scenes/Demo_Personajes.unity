@@ -277,7 +277,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 543450651927109077}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40699716 stripped
 GameObject:
@@ -19336,7 +19336,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 17cba4ed42efb4640b8dae95109d0f7a, type: 2}
     - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_Name
-      value: Dron01
+      value: Dron
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_Layer
@@ -28554,6 +28554,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce1931601fc3265458bbd5e4422504e9, type: 3}
   m_PrefabInstance: {fileID: 595493378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1216121977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216121978}
+  m_Layer: 0
+  m_Name: Locacion (Dron)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216121978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216121977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 14, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450651927109077}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226296717
 GameObject:
   m_ObjectHideFlags: 0
@@ -29571,7 +29601,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   estarAlerta: 0
-  player: {fileID: 543450651927109077}
+  player: {fileID: 1216121978}
   speed: 1
   disparoMorir: 0
   playerController: {fileID: 919132147739101041}
@@ -30327,7 +30357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450651927109077}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514539103
 GameObject:
@@ -32107,7 +32137,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 543450651927109077}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1720181010
 PrefabInstance:
@@ -35896,6 +35926,7 @@ Transform:
   - {fileID: 65201556}
   - {fileID: 639981974}
   - {fileID: 33978167}
+  - {fileID: 1216121978}
   - {fileID: 1513906802}
   - {fileID: 38798904}
   - {fileID: 1715327870}
