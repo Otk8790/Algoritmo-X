@@ -304,6 +304,19 @@ public class PlayerController : MonoBehaviour
         Destroy(sonidoGolpe, 2);
     }
 
+    public void dañozombi()
+    {
+        vida -= 30;
+        setVidaPor();
+        playerAnimatorController.SetTrigger("daño");
+
+        if(vida <= 0)
+        {
+            playerAnimatorController.SetTrigger("morir");
+            Debug.Log("muerto");
+        }
+    }
+
     public void setVidaPor()
     {
         VidaPor.text = vida.ToString() + "%" ;

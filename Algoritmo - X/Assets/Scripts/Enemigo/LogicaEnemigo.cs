@@ -1,15 +1,15 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class LogicaEnemigo : MonoBehaviour {
-    private GameObject target;
+     private GameObject target;
     private NavMeshAgent agente;
     private Vida vida;
     private Animator animator;
     private Collider collide;
     private Vida vidaJugador;
-    private LogicaJugador logicaJugador;
+    public PlayerController playerController;
     public bool Vida0 = false;
     public bool estaAtacando = false;
     public float speed = 1.0f;
@@ -22,14 +22,14 @@ public class LogicaEnemigo : MonoBehaviour {
 	void Start () {
         target = GameObject.Find("Player");
         vidaJugador = target.GetComponent<Vida>();
-        if(vidaJugador== null)
+        if(playerController== null)
         {
             throw new System.Exception("El objeto Jugador no tiene componente Vida");
         }
 
-        logicaJugador = target.GetComponent<LogicaJugador>();
+        playerController = target.GetComponent<PlayerController>();
 
-        if (logicaJugador == null)
+        if (playerController == null)
         {
             throw new System.Exception("El objeto Jugador no tiene componente LogicaJugador");
         }
@@ -38,6 +38,7 @@ public class LogicaEnemigo : MonoBehaviour {
         vida = GetComponent<Vida>();
         animator = GetComponent<Animator>();
         collide = GetComponent<Collider>();
+        
 
     }
 	
@@ -81,7 +82,7 @@ public class LogicaEnemigo : MonoBehaviour {
     void Perseguir()
     {
         if (Vida0) return;
-        if (logicaJugador.Vida0) return;
+//        if (logicaJugador.Vida0) return;
         agente.destination = target.transform.position;
     }
 
@@ -89,23 +90,31 @@ public class LogicaEnemigo : MonoBehaviour {
     {
         if (Vida0) return;
         if (estaAtacando) return;
-        if (logicaJugador.Vida0) return;
+//        if (logicaJugador.Vida0) return;
         float distanciaDelBlanco = Vector3.Distance(target.transform.position, transform.position);
 
         if(distanciaDelBlanco <= 2.0 && mirando)
         {
             Atacar();
-        }
+        }   
     }
 
     void Atacar()
     {
-        vidaJugador.RecibirDaño(daño);
-        agente.speed = 0;
-        agente.angularSpeed = 0;
-        estaAtacando = true;
-        animator.SetTrigger("DebeAtacar");
-        Invoke("ReiniciarAtaque", 1.5f);
+        //vidaJugador.RecibirDaño(daño);
+        if(playerController.vida <= 0)
+        {
+            Debug.Log("no ataco");
+        }
+        else
+        {
+            playerController.dañozombi();
+            agente.speed = 0;
+            agente.angularSpeed = 0;
+            estaAtacando = true;
+            animator.SetTrigger("DebeAtacar");
+            Invoke("ReiniciarAtaque", 1.5f);
+        }
     }
 
     void ReiniciarAtaque()
@@ -115,13 +124,13 @@ public class LogicaEnemigo : MonoBehaviour {
         agente.angularSpeed = angularSpeed;
     }
 
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Bala")
         {
             
             Destroy(gameObject);
         }
-    }
+    }*/
 
 }

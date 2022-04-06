@@ -13003,7 +13003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad9b799914916a84a928d46f23e1b19c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad9b799914916a84a928d46f23e1b19c, type: 3}
       propertyPath: m_TagString
@@ -14331,6 +14331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf517db0405cf34cb16016e46e7ca02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
   Vida0: 0
   estaAtacando: 0
   speed: 1
@@ -14444,7 +14445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
       propertyPath: m_TagString
@@ -25143,7 +25144,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25801,6 +25802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf517db0405cf34cb16016e46e7ca02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 919132147739101041}
   Vida0: 0
   estaAtacando: 0
   speed: 1
@@ -26998,8 +27000,8 @@ RectTransform:
   m_Father: {fileID: 163340085}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
