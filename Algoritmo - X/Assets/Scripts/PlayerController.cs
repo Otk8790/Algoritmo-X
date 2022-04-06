@@ -6,6 +6,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    public Item item;
     public static PlayerController instance;
     private DronEnemy dronEnemy;
     //MovimientoPersonaje
@@ -79,6 +80,7 @@ public class PlayerController : MonoBehaviour
     private float shotRateTime = 0f;
     public Transform puntoDeDisparo;
     public float daño = 20f;
+    public bool tieneArma;
 
     [Header("SONIDO")]
 
@@ -101,6 +103,7 @@ public class PlayerController : MonoBehaviour
     }
     void Start()
     {
+        tieneArma = false;
         puedeAtacar = true;
         activarEscudo = true;
         puedeMoverse = true;
@@ -233,14 +236,13 @@ public class PlayerController : MonoBehaviour
         {
             if (ControlDialogos.enDialogo || ControlDialogosLucian.enDialogo)
                 return;
-            if (Time.time > shotRateTime)
+            if (Time.time > shotRateTime && tieneArma == false)
             {
                 playerAnimatorController.SetTrigger("Disparar");
                 GameObject newBullet;
                 newBullet = Instantiate(bullet, spawnPoint.position, spawnPoint.rotation);
                 newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
 
-                
                 shotRateTime = Time.time + shotRate;
                 Destroy(newBullet, 2);
 
