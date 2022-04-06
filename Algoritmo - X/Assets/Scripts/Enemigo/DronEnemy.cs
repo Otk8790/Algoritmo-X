@@ -17,21 +17,31 @@ public class DronEnemy : MonoBehaviour
     public bool estarAlerta;
     public Transform player;
     public float speed;
+    public bool disparoMorir;
+    public PlayerController playerController;
     // Start is called before the first frame update
     void Start()
     {
-
+        disparoMorir = true;
     }
 
     // Update is called once per frame
     public void Update()
     {
         estarAlerta = Physics.CheckSphere(transform.position, rangoAlerta, capaDeHope);
+
+
         if (estarAlerta == true)
         {
             transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
-            fuego();
+            if(playerController.vida <= 0)
+            {
+                Debug.Log("No disparo");
+            }
+            else{
+                fuego();
+            }
         }
     }
 
@@ -43,7 +53,7 @@ public class DronEnemy : MonoBehaviour
 
     public void fuego()
     {
-        if (Time.time > EnemRateTime)
+        if (Time.time > EnemRateTime && disparoMorir)
         {
             GameObject newBullet;
             newBullet = Instantiate(bullet, disparoSpawn.position, disparoSpawn.rotation);
