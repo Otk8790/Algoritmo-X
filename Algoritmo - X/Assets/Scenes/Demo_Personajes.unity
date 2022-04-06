@@ -5598,7 +5598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &175914577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32033,8 +32033,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -2.75}
+  m_SizeDelta: {x: 0, y: -5.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705324731
 MonoBehaviour:
@@ -32058,15 +32058,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1bfcbb323f183584fb52f7e9dab3b47f, type: 2}
-  m_sharedMaterial: {fileID: 8033238137816938355, guid: 1bfcbb323f183584fb52f7e9dab3b47f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f4a6f7ffc0d8a242b871cedcd12c55d, type: 2}
+  m_sharedMaterial: {fileID: 7321715136523921433, guid: 2f4a6f7ffc0d8a242b871cedcd12c55d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294966528
+  m_fontColor: {r: 0, g: 0.9905877, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -32364,11 +32364,11 @@ MonoBehaviour:
   txtDialogo: {fileID: 1705324731}
   configuracion: {fileID: 11400000, guid: 6fde64ae5ad7ba748937b0acd4a89843, type: 2}
   dialogoEnsayo:
-  - texto: Hola mi nombre es Frailejon Ernesto Perez!
+  - texto: 
     personaje: 0
-  - texto: Te quiero saludar, no me conoces!
+  - texto: 
     personaje: 0
-  - texto: Pero yo a ti si si si, yo soy tu amigo!!
+  - texto: 
     personaje: 0
 --- !u!1 &1794838138
 GameObject:
