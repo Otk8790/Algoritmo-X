@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -51,11 +52,15 @@ public class PlayerController : MonoBehaviour
 
     [Header("VIDA")]
     [SerializeField]
-    int vidaMax = 5;
+    /* int vidaMax = 5;
     int vidaActual;
     public Image mascaradeDaño;
     public Image barraverde;
-    public float valorAlfa;
+    public float valorAlfa; */
+
+    public float vida = 100;
+    public Image barraDeVida;
+    public TextMeshProUGUI VidaPor;
 
 
     [Header("PARTICULAS")]
@@ -102,7 +107,8 @@ public class PlayerController : MonoBehaviour
         player = GetComponent<CharacterController>();
         playerAnimatorController = GetComponent<Animator>();
         _playerAnim = GetComponent<PlayerAnimation>();
-        vidaActual = vidaMax;
+        setVidaPor();
+        /* vidaActual = vidaMax; */
     }
 
     // Update is called once per frame
@@ -131,6 +137,10 @@ public class PlayerController : MonoBehaviour
         Disparo();
 
         player.Move(movePlayer * Time.deltaTime);
+
+        vida = Mathf.Clamp(vida, 0, 100);
+
+        barraDeVida.fillAmount = vida / 100;
     }
     public void movimiento()
     {
@@ -275,10 +285,35 @@ public class PlayerController : MonoBehaviour
         puedeMoverse = true;
 
     }
-    private void OnAnimatorMove()
-    {
 
+    public void quitarVida()
+    {
+        vida -= 20;
+        setVidaPor();
     }
+
+    public void setVidaPor()
+    {
+        VidaPor.text = vida.ToString() + "%" ;
+    }
+
+    private void OnTriggerEnter(Collider other){
+        
+        //Si el objeto con el que el animal colisiona tiene el Tag Projectile
+
+        if(other.CompareTag("Bala")){
+            //Destrute el cohete
+            Destroy(other.gameObject);
+            quitarVida();
+            playerAnimatorController.SetTrigger("daño");
+
+            if(vida <= 0){
+                playerAnimatorController.SetTrigger("morir");
+                Debug.Log("Game Over");
+            }       
+        }
+    }
+
     /*void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
