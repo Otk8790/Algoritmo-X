@@ -20205,6 +20205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.086
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 6956ce26d0b7dcd4d9a1f27e4d33df02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 38fb7ff951eddbd489f65b3ed3ababbc, type: 2}
     - target: {fileID: -927199367670048503, guid: 6956ce26d0b7dcd4d9a1f27e4d33df02, type: 3}
       propertyPath: m_Name
       value: PortalVortice_mesh
