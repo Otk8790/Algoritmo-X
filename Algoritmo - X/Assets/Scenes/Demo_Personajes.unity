@@ -20314,7 +20314,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6956ce26d0b7dcd4d9a1f27e4d33df02, type: 3}
 --- !u!4 &753637606 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6956ce26d0b7dcd4d9a1f27e4d33df02, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 753637605}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &782774417
@@ -28535,8 +28535,10 @@ MonoBehaviour:
   txtDialogo: {fileID: 1198516475}
   configuracion: {fileID: 11400000, guid: 6fde64ae5ad7ba748937b0acd4a89843, type: 2}
   dialogoLucian:
-  - texto: "\xBFDonde estoy?"
-  - texto: "\xBFAcaso esto es un sue\xF1o? "
+  - texto: "\xBFQu\xE9...Qu\xE9 sucedi\xF3?"
+  - texto: Esa luz cegadora...
+  - texto: "\xA1Eh!"
+  - texto: "Este lugar... \xBFAcaso es un sue\xF1o?"
 --- !u!1 &1233864911
 GameObject:
   m_ObjectHideFlags: 0
@@ -30155,7 +30157,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 7d77909dca727f245b05ff5c184b7981, type: 3}
 --- !u!4 &1453122590 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7d77909dca727f245b05ff5c184b7981, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1453122589}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1472423647 stripped
