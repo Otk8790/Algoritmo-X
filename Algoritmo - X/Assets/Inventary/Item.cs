@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public PlayerController playerController;
     [Header("Identificacion")]
     public int ID;
     public string type;
@@ -25,6 +24,7 @@ public class Item : MonoBehaviour
     public GameObject weapon;
 
     public bool playerWeapon;
+
     private void Start()
     {
         weaponManager = GameObject.FindWithTag("WeaponManager");
@@ -49,7 +49,6 @@ public class Item : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 equipped = false;
-                playerController.tieneArma = false;
             }
             if (equipped==false)
             {
@@ -62,11 +61,9 @@ public class Item : MonoBehaviour
     {
         if (type=="Weapon")
         {
-                playerController.tieneArma = true;
-                weapon.SetActive(true);
+            weapon.SetActive(true);
 
-                weapon.GetComponent<Item>().equipped = true;
-
+            weapon.GetComponent<Item>().equipped = true;
         }
     }
 }
