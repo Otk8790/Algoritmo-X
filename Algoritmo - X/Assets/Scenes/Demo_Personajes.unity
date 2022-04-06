@@ -29573,6 +29573,8 @@ MonoBehaviour:
   estarAlerta: 0
   player: {fileID: 543450651927109077}
   speed: 1
+  disparoMorir: 0
+  playerController: {fileID: 919132147739101041}
 --- !u!114 &1400802105
 MonoBehaviour:
   m_ObjectHideFlags: 0

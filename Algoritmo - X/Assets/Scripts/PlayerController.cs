@@ -7,6 +7,7 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
+    private DronEnemy dronEnemy;
     //MovimientoPersonaje
     private float horizontalMove;
     private float verticalMove;
@@ -309,6 +310,7 @@ public class PlayerController : MonoBehaviour
 
             if(vida <= 0){
                 playerAnimatorController.SetTrigger("morir");
+                dronEnemy.disparoMorir = false;
                 Debug.Log("Game Over");
             }       
         }
