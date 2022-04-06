@@ -13822,7 +13822,7 @@ RectTransform:
   - {fileID: 1878162918}
   - {fileID: 485423063}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -19189,7 +19189,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701431675
 GameObject:
@@ -26284,7 +26284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 101, y: -35.28, z: 0}
 --- !u!1 &979912856 stripped
 GameObject:
@@ -28391,8 +28391,10 @@ MonoBehaviour:
   txtDialogo: {fileID: 1198516475}
   configuracion: {fileID: 11400000, guid: 6fde64ae5ad7ba748937b0acd4a89843, type: 2}
   dialogoLucian:
-  - texto: "\xBFDonde estoy?"
-  - texto: "\xBFAcaso esto es un sue\xF1o? "
+  - texto: "\xBFQu\xE9...Qu\xE9 sucedi\xF3? "
+  - texto: Esa luz cegadora...
+  - texto: "\xA1Eh!"
+  - texto: "Este lugar...\xBFAcaso estoy so\xF1ando?"
 --- !u!1 &1233864911
 GameObject:
   m_ObjectHideFlags: 0
@@ -29287,6 +29289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 3
   explosionParticle: {fileID: 198993423900235080, guid: eca000ab44c908d4dab395f654753038, type: 3}
+  BarraVidaEnemigo: {fileID: 0}
 --- !u!4 &1400802107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a263c8c8b3f45a45ade166e26576b49, type: 3}
@@ -29736,7 +29739,7 @@ Transform:
   m_LocalScale: {x: 600, y: 5, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449736730
 GameObject:
@@ -30291,7 +30294,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546506048}
-  m_Mesh: {fileID: 712129040}
+  m_Mesh: {fileID: 0}
 --- !u!23 &1546506051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30345,6 +30348,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MeshFormatVersion: 0
+  m_Faces: []
+  m_SharedVertices: []
+  m_SharedTextures: []
+  m_Positions: []
+  m_Textures0: []
+  m_Textures2: []
+  m_Textures3: []
+  m_Tangents: []
+  m_Colors: []
+  m_UnwrapParameters:
+    m_HardAngle: 88
+    m_PackMargin: 20
+    m_AngleError: 8
+    m_AreaError: 15
+  m_PreserveMeshAssetOnDestroy: 0
+  assetGuid: 
+  m_Mesh: {fileID: 0}
+  m_IsSelectable: 1
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &1546506053
 Transform:
   m_ObjectHideFlags: 0
@@ -35265,7 +35290,7 @@ Transform:
   - {fileID: 38798904}
   - {fileID: 1715327870}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &543450653032857979
 Transform:
@@ -35433,7 +35458,7 @@ Transform:
   - {fileID: 2031617498}
   - {fileID: 1623386572}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &553099412232847748
 Transform:
