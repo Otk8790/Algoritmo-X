@@ -7171,8 +7171,8 @@ RectTransform:
   m_Father: {fileID: 1547136155}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13168,7 +13168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad9b799914916a84a928d46f23e1b19c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad9b799914916a84a928d46f23e1b19c, type: 3}
       propertyPath: m_TagString
@@ -13926,6 +13926,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6469708752745145133, guid: 32ff52dcf5c8abb47b3d822af327842a, type: 3}
   m_PrefabInstance: {fileID: 2143266724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &590937245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590937246}
+  m_Layer: 0
+  m_Name: Locacion (Enemigo)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590937246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590937245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41, y: 18.09, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450651927109077}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &595493378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14424,11 +14454,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 636085369}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f89faae3ae65df146bf72b08b742a1f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 519d4ba1d38d06940b33d4d6d0790e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 5
-  explosionParticle: {fileID: 3199346384015752365, guid: 307229a5540374aae98859caad2128a3, type: 3}
+  rangoAlerta: 6
+  capaDeHope:
+    serializedVersion: 2
+    m_Bits: 128
+  estarAlerta: 0
+  player: {fileID: 590937246}
+  speed: 0
+  disparoMorir: 0
+  playerController: {fileID: 919132147739101041}
 --- !u!95 &636085371
 Animator:
   serializedVersion: 3
@@ -14484,25 +14521,6 @@ CapsuleCollider:
   m_Height: 23.019634
   m_Direction: 1
   m_Center: {x: 0, y: 11.178654, z: 2.43608}
---- !u!114 &636085374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 636085369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf517db0405cf34cb16016e46e7ca02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
-  Vida0: 0
-  estaAtacando: 0
-  speed: 1
-  angularSpeed: 120
-  "da\xF1o": 1
-  mirando: 0
 --- !u!1 &639981973
 GameObject:
   m_ObjectHideFlags: 0
@@ -24871,7 +24889,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25959,7 +25977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 408275251c56a9f43a3a73241390b75c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 408275251c56a9f43a3a73241390b75c, type: 3}
       propertyPath: m_TagString
@@ -31179,6 +31197,7 @@ Transform:
   - {fileID: 1513906802}
   - {fileID: 38798904}
   - {fileID: 1715327870}
+  - {fileID: 590937246}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
