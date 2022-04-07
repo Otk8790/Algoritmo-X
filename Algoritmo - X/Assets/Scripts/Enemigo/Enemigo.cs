@@ -4,87 +4,68 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    public int rutina;
-    public float cronometro;
-    public Animator ani;
-    public Quaternion angulo;
-    public float grado;
+    [Header("DISPARO ENEMIGO")]
+    //public GameObject bullet;
+    //public Transform disparoSpawn;
+    //public float EnemRate = 4.0f;
+    private float EnemRateTime = 0f;
+    //public float shotForce = 1500f;
 
-    public GameObject target;
-    public bool atacando;
+    [Header("SEGUIR ENEMIGO")]
+    public float rangoAlerta;
+    public LayerMask capaDeHope;
+    public bool estarAlerta;
+    public Transform player;
+    public float speed;
+    public bool disparoMorir;
+    public PlayerController playerController;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        ani = GetComponent<Animator>();
-        target = GameObject.Find("Player");
+        disparoMorir = true;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        Comportamiento_Enemigo();
+        estarAlerta = Physics.CheckSphere(transform.position, rangoAlerta, capaDeHope);
+        animator.SetBool("run", false); 
+
+
+
+        if (estarAlerta == true)
+        {
+            transform.LookAt(new Vector3 (player.position.x, transform.position.y, player.position.z));
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, player.position.y, player.position.z), speed * Time.deltaTime);
+            animator.SetBool("run", true);
+
+            if(playerController.vida <= 0)
+            {
+                Debug.Log("No disparo");
+                //animator.SetBool("DebeAtacar",false);
+            }
+            else{
+                fuego();
+                 
+            }
+        }
     }
 
-    public void Comportamiento_Enemigo()
+    private void OnDrawGizmos()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) >5)
-        {
-        ani.SetBool("run", false);
-        cronometro += 1 *Time.deltaTime;
-        if (cronometro >=4)
-        {
-            rutina = Random.Range(0, 2);
-            cronometro = 0;
-        }
-        switch (rutina)
-        {
-            case 0:
-            ani.SetBool("walk", false);
-            break;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, rangoAlerta);
+    }
 
-            case 1:
+    public void fuego()
+    {
+        if (Time.time > EnemRateTime)
+        {
+            //animator.SetBool("DebeAtacar",true);
+            //animator.SetBool("run", true);
             
-        grado = Random.Range(0, 360);
-        angulo = Quaternion.Euler(0, grado, 0);
-        rutina++;
-        break;
-
-        case 2:
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo,0.5f);
-        transform.Translate(Vector3.forward * 1 * Time.deltaTime);
-        ani.SetBool("walk", true);
-        break;
         }
     }
-    else
-    {
-        if(Vector3.Distance(transform.position,target.transform.position) >1 && !atacando)
-        {
-        var lookPos = target.transform.position - transform.position;
-        lookPos.y = 0;
-        var rotation = Quaternion.LookRotation(lookPos);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
-        ani.SetBool("walk", false);
-
-        ani.SetBool("run", true);
-        transform.Translate(Vector3.forward * 2 * Time.deltaTime);
-
-        ani.SetBool("attack", false);
-    }
-    else
-    {
-        ani.SetBool("walk", false);
-        ani.SetBool("run", false);
-
-        ani.SetBool("attack", true);
-        atacando = true;
-    }
-    }
-    }
-
-    public void Final_ani()
-    {
-      ani.SetBool("attack", false);
-      atacando = false; 
-    } 
 }

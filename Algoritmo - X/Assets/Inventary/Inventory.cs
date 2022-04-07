@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     [Header("Funcionamiento Slots")]
     private int enableSlots;
 
-    private GameObject[] slot;
+    public GameObject[] slot;
 
     public GameObject slotHolder;
 
