@@ -94,7 +94,7 @@ Material:
     - _Scale: 10
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.3
+    - _Speed: 0.585
     - _Speed_Up: 0
     - _SrcBlend: 1
     - _UVSec: 0
@@ -103,9 +103,9 @@ Material:
     - _ZWrite: 1
     - _a: 0
     - _cut_level: 10
-    - _deform: 10
+    - _deform: 15
     - _glitchColor: 1
-    - _intensity: 3
+    - _intensity: 8
     - _monchrom: 1
     - _monochrom: 0
     - _noise_details: 7.07
@@ -115,3 +115,4 @@ Material:
     - _Color_diff: {r: 0.25, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _diff_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

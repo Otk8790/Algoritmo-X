@@ -111,7 +111,7 @@ Material:
     - _Zoom: 1
     - _a: 12.5
     - _cut_level: 6
-    - _deform: 3
+    - _deform: 8
     - _dist_chrom: 1
     - _glitchColor: 1
     - _grey: 1
@@ -121,7 +121,7 @@ Material:
     - _noise_details: 10.86
     - _t: 1
     m_Colors:
-    - _Color: {r: 0.9558824, g: 0, b: 0.6526371, a: 1}
+    - _Color: {r: 15.309804, g: 0, b: 10.415687, a: 1}
     - _Color_diff: {r: 0.25, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _diff_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -137,13 +137,13 @@ Material:
     - _Zoom: 1
     - _a: 12.5
     - _cut_level: -2.33
-    - _deform: 2
+    - _deform: 5
     - _deformation_type: 0
     - _deformation_type_Factor: 1
     - _dist_chrom: 1
     - _glitchColor: 1
     - _grey: 1
-    - _intensity: 4
+    - _intensity: 10
     - _mask_type: 1
     - _monochrom: 1
     - _noise_details: 16
@@ -151,10 +151,11 @@ Material:
     - _value: 0.1
     m_Colors:
     - _BackFace_Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 1}
+    - _Color: {r: 14.748154, g: 14.748154, b: 14.748154, a: 1}
     - _Color_diff: {r: 0.25, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FrontFace_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Outline_Color: {r: 1, g: 1, b: 1, a: 0}
     - _diff_Color: {r: 0.75, g: 0.75, b: 0.75, a: 1}
     - _glitchColor_c: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

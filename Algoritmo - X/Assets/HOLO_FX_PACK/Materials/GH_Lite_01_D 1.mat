@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GH_Lite_01_D 1
   m_Shader: {fileID: 4800000, guid: 6190044a0059e154a99743d775dd4a1b, type: 3}
-  m_ShaderKeywords: _EMISSION _GLITCHCOLOR_ON _X_ON _Y_ON
+  m_ShaderKeywords: _EMISSION _GLITCHCOLOR_ON _ORIGINALUVSWITCH_ON _X_ON _Y_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _originalDiffuse:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 08b3912bdc0a5ed4d9a27125425a97f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -88,7 +88,7 @@ Material:
     - _OcclusionStrength: 1
     - _Opacity: 1
     - _Opacity_gl: 1
-    - _OriginalUVSwitch: 0
+    - _OriginalUVSwitch: 1
     - _Parallax: 0.02
     - _Power: 0.831
     - _Scale: 10
@@ -103,15 +103,15 @@ Material:
     - _ZWrite: 1
     - _a: 0
     - _cut_level: 10
-    - _deform: 8
+    - _deform: 20
     - _glitchColor: 1
-    - _intensity: 5
+    - _intensity: 10
     - _monchrom: 1
     - _monochrom: 0
     - _noise_details: 7.24
     - _t: 1
     m_Colors:
-    - _Color: {r: 0.7838741, g: 0, b: 0.86764705, a: 1}
+    - _Color: {r: 123.59726, g: 0, b: 136.57497, a: 1}
     - _Color_diff: {r: 0.25, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _diff_Color: {r: 1, g: 1, b: 1, a: 1}
