@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 public class LogicaEnemigo : MonoBehaviour {
-     private GameObject target;
+    private GameObject target;
     private NavMeshAgent agente;
     private Vida vida;
     private Animator animator;
